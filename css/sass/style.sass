@@ -1,0 +1,534 @@
+.container
+	@media (min-width: 1920px)
+		width: 1704px
+		padding-right: 20px
+		padding-left: 20px
+.row
+	@media (min-width: 1920px)
+		margin-right: -20px
+		margin-left: -20px
+.col-bg-2,
+.col-bg-3,
+.col-bg-4,
+.col-bg-5,
+.col-bg-7
+	@media (min-width: 1920px)
+		float: left
+		position: relative
+		min-height: 1px
+		padding-right: 20px
+		padding-left: 20px
+.col-bg-2
+	@media (min-width: 1920px)
+		width: 16.6667%
+.col-bg-3
+	@media (min-width: 1920px)
+		width: 25%
+.col-bg-4
+	@media (min-width: 1920px)
+		width: 33.3333%
+.col-bg-5
+	@media (min-width: 1920px)
+		width: 41.6667%
+.col-bg-7
+	@media (min-width: 1920px)
+		width: 58.3333%
+ul,
+ol,
+h1,
+h2,
+h3,
+h4
+	margin: 0px
+li
+	list-style: none
+a,
+a:focus,
+a:hover
+	text-decoration: none
+body
+	margin-top: 50px
+header
+	background: #00f
+	padding-top: 11px
+	padding-bottom: 10px
+	li
+		list-style: none
+		float: left
+		a
+			font-size: 16px
+			line-height: 20px
+			color: #ffff01
+			&:focus
+				color: #ffff01
+				text-decoration: none
+			&:hover
+				color: #fff
+				text-decoration: none
+	nav
+		padding-top: 4px
+		li
+			margin-right: 25px
+			&:last-child
+				margin-right: 0px
+			a
+				font-family: ProximaNova-Regular, Arial
+	.country
+		position: relative
+		// left: 45px
+		left: 14%
+		padding-top: 4px
+		li
+			margin-right: 4px
+			&::after
+				content: ''
+				display: inline-block
+				width: 2px
+				height: 11px
+				background: #ffff0f 1px
+				margin-left: 5px
+			&:last-child::after
+				display: none
+			a
+				font-family: ProximaNova-Bold, Arial
+	.free_call
+		margin-left: 10.8%
+		h4
+			display: inline-block
+			font-family: ProximaNova-Regular, Arial
+			font-size: 21px
+			line-height: 26px
+			color: #ffff01
+			text-transform: uppercase
+			&.banner
+				color: #00f
+				background: #ffff01
+				border-radius: 4px
+				word-spacing: -1px
+				padding: 2px 8px 0px 8px
+				margin-right: 11px
+			em
+				display: inline-block
+				width: 4px
+				border-bottom: 2px solid #ffff01
+				margin-bottom: 6px
+				margin: 0px 1px 6px
+	.online_quote
+		float: right
+		font-family: ProximaNova-Bold, Arial
+		margin-right: 1px
+		a
+			color: #ffff01
+			&:hover
+				color: #fff
+				span
+					background-position: left bottom
+		h4,
+		span
+			display: inline-block
+			font-size: 16px
+		h4
+			line-height: 20px
+			margin-right: 6px
+		span
+			width: 31px
+			height: 29px
+			line-height: 29px
+			background: url('../img/online_quote_bg.png')
+			text-align: center
+	//End .online_quote
+.header_nav_and_slider
+	position: relative
+	width: 100%
+	height: 100%
+	overflow: hidden
+	.slider_top_height
+		position: absolute
+		height: 100%
+	.logo_and_nav,
+	.slider_top
+		padding-bottom: 10000px
+		margin-bottom: -10000px
+	.logo_and_nav
+		position: relative
+		float: left
+		width: 21.458333%
+		background: #ffff01
+		padding-top: 46px
+		padding-left: 6.68%
+		.logo
+			margin-left: -1px
+		nav
+			margin-top: 51px
+			margin-left: -1px
+			padding-bottom: 67px
+			li
+				margin-bottom: 20px
+				&:nth-child(1) a::before
+					background-position: 0px 0px
+				&:nth-child(2)
+					margin-bottom: 19px
+					a
+						line-height: 42px
+						&::before
+							background-position: 0px -54px
+				&:nth-child(3)
+					margin-bottom: 18px
+					a
+						line-height: 36px
+						&::before
+							background-position: 0px -115px
+				&:nth-child(4)
+					margin-bottom: 18px
+					a
+						line-height: 45px
+						&::before
+							background-position: 0px -169px
+				&:nth-child(5)
+					margin-bottom: 22px
+					a::before
+						background-position: 0px -232px
+				&:nth-child(6)
+					margin-bottom: 25px
+					a
+						line-height: 39px
+						&::before
+							background-position: 0px -288px
+				&:nth-child(7)
+					margin-bottom: 27px
+					a
+						line-height: 27px
+						&::before
+							background-position: 0px -352px
+				&:nth-child(8)
+					margin-bottom: 30px
+					a::before
+						background-position: 0px -406px
+				&:nth-child(9) a
+					line-height: 22px
+					&::before
+						background-position: 0px -470px
+			a
+				position: relative
+				display: inline-block
+				font-family: ProximaNova-SemiBold, Arial
+				font-size: 18px
+				line-height: 34px
+				color: #00f
+				padding-left: 62px
+				transition: all .25s linear
+				-webkit-transition: all .25s linear
+				-moz-transition: all .25s linear
+				-o-transition: all .25s linear
+				&:hover
+					opacity: 1 !important
+				&::before
+					content: ''
+					position: absolute
+					top: 0px
+					left: 0px
+					display: block
+					width: 45px
+					height: 45px
+					background: url('../img/nav_logo_bars.png')
+	//End nav
+	.slider_top
+		position: relative
+		float: left
+		width: 78.541667%
+		height: 100%
+		background: #d5d5d5
+		.slider_top_content
+			position: absolute
+			bottom: 121px
+			left: 76px
+			width: 70%
+			h1
+				font-family: KroppenRound-Bold, Arial
+				font-size: 86px
+				line-height: 87px
+				color: #00f
+				word-spacing: 2px
+				margin-bottom: 81px
+				.bg
+					background: #ffffff
+					// position: relative
+					outline: 21px solid #ffffff
+					-moz-outline-offset: -0.04em
+					span
+						position: relative
+			.read_more
+				font-family: ProximaNova-Regular, Arial
+				font-size: 30px
+				line-height: 36px
+				color: #00f
+				background: #ffff01
+				text-transform: uppercase
+				border-radius: 5px
+				padding: 14px 24px 12px 21px
+				margin-left: -21px
+				transition: all .25s linear
+				-webkit-transition: all .25s linear
+				-moz-transition: all .25s linear
+				-o-transition: all .25s linear
+				&:hover
+					background: #fff
+		.slick-prev,
+		.slick-next
+			display: none !important
+		.slick_dots_box
+			position: relative
+		.slick-dots
+			position: absolute
+			bottom: 51px
+			left: 56px
+			li
+				display: inline-block
+				margin-right: 18px
+				&:last-child
+					margin-right: 0px
+				button
+					width: 20px
+					height: 20px
+					border: 3px solid #fff
+					border-radius: 50%
+					color: transparent
+					background: transparent
+					outline: none
+				&.slick-active button
+					background: #fff
+	//End .slider_top
+//End .header_nav_and_slider
+.we_rent_fun
+	background: #f6f6f6
+	padding-top: 50px
+	padding-bottom: 48px
+	.text
+		font-family: ProximaNova-SemiBold, Arial
+		font-size: 30px
+		line-height: 36px
+		color: #00f
+		letter-spacing: -1px
+		margin-top: 46px
+	.logo
+		margin-left: 25.15%
+//End .we_rent_fun
+.featured_products
+	padding-top: 69px
+	padding-bottom: 91px
+	.name
+		font-family: ProximaNova-SemiBold, Arial
+		font-size: 36px
+		line-height: 44px
+		color: #00f
+		margin-top: 0px
+		margin-bottom: 41px
+	.cd-item
+		height: 495px
+		img
+			height: 396px
+		.cd-trigger
+			top: 0px
+			font-family: ProximaNova-SemiBold, Arial
+			font-size: 19px
+			height: 396px
+			line-height: 396px
+			color: #fff
+			background: rgba(0, 0, 255, .2)
+			&:hover
+				background: rgba(0, 0, 255, .3)
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -43px
+				margin-left: -21px
+				display: inline-block
+				width: 42px
+				height: 25px
+				background: url('../img/quick_view_eye.png')
+		.information
+			background: #ffff01
+			padding: 22px 30px 24px 29px
+			.information_box
+				width: 55%
+				float: left
+				margin-top: 1px
+			h3,
+			h4
+				display: inline-block
+				color: #00f
+			h3
+				font-family: ProximaNova-SemiBold, Arial
+				font-size: 24px
+				line-height: 28px
+				&:hover
+					color: #fff
+			h4
+				font-family: ProximaNova-Regular, Arial
+				font-size: 18px
+				line-height: 19px
+				margin-left: 1px
+			.read_more
+				height: 48px
+				float: right
+				margin-top: 5px
+				a
+					position: relative
+					display: inline-block
+					width: 43px
+					height: 43px
+					border-radius: 50px
+					border: 3px solid #00f
+					// transition: all .25s linear
+					// -webkit-transition: all .25s linear
+					// -moz-transition: all .25s linear
+					// -o-transition: all .25s linear
+					&::before
+						content: 'Read more'
+						display: none
+						font-family: ProximaNova-SemiBold, Arial
+						font-size: 18px
+						line-height: 38px
+						color: #ffff01
+						text-transform: uppercase
+						margin-left: 19px
+						// transition: margin-left .25s linear
+						// -webkit-transition: margin-left .25s linear
+						// -moz-transition: margin-left .25s linear
+						// -o-transition: margin-left .25s linear
+					&::after
+						content: ''
+						position: absolute
+						top: 7px
+						right: 7px
+						display: block
+						width: 23px
+						height: 23px
+						background: url('../img/read_more_plus.png')
+						background-repeat: no-repeat
+						background-position: top left
+		&:hover .read_more a 
+			width: 176px
+			background: #00f
+			&::before
+				display: inline-block
+				// -webkit-transition-delay: 0.5s
+				// -o-transition-delay: 0.5s
+				// -moz-transition-delay: 0.5s
+				// transition-delay: 0.5s
+			&::after
+				background-position: bottom left
+	.cd-items
+		.slick-prev,
+		.slick-next
+			position: absolute
+			top: 0px
+			bottom: 0px
+			font-size: 0px
+			width: 120px
+			background: transparent
+			outline: none
+			border: none
+			transition: all .2s linear
+			-webkit-transition: all .2s linear
+			-moz-transition: all .2s linear
+			-o-transition: all .2s linear
+			&:hover
+				background: rgba(0, 0, 0, .05)
+			&::before
+				content: ''
+				display: inline-block
+				width: 32px
+				height: 61px
+				background: url('../img/featured_products_arrows_prev_next.png')
+				background-repeat: no-repeat
+		.slick-prev
+			left: -100px
+		.slick-next
+			right: -100px
+			&::before
+				background-position: left bottom
+//End .featured_products
+.reviews_block
+	background: #00f
+	padding-top: 76px
+	padding-bottom: 60px
+	.cd-testimonials-wrapper
+		width: 100%
+		max-width: 1200px
+		padding: 0px
+		background: transparent
+		text-align: center
+		margin: 0px
+		&::after
+			display: none
+	.cd-see-all
+		background: transparent
+	.slick-prev,
+	.slick-next
+		display: none !important
+	.cd-testimonials p
+		font-family: ProximaNova-SemiBold, Arial
+		font-style: normal
+		font-size: 22px
+		line-height: 32px
+		color: #ffff01
+		margin-bottom: 32px
+	.cd-author .cd-author-info li
+		display: inline-block
+		font-family: ProximaNova-SemiBold, Arial
+		font-size: 30px
+		line-height: 36px
+		color: #ffff01
+		&:first-child
+			white-space: pre-wrap
+		// &::after
+		// 	content: ''
+		// 	display: inline-block
+	.slick_dots_box
+		margin-top: 78px
+		.slick-dots
+			li
+				display: inline-block
+				margin-right: 18px
+				&:last-child
+					margin-right: 0px
+				button
+					width: 20px
+					height: 20px
+					border: 3px solid #ffff01
+					border-radius: 50%
+					color: transparent
+					background: transparent
+					outline: none
+				&.slick-active button
+					background: #ffff01
+	.cd-see-all
+		position: relative
+		display: inline-block
+		font-family: ProximaNova-SemiBold, Arial
+		font-size: 18px
+		font-weight: normal
+		line-height: 22px
+		color: #00f
+		width: initial
+		height: initial
+		background: #ffff01
+		border-radius: 50px
+		padding: 10px 84px 11px 20px
+		margin-top: 48px
+		&:hover
+			color: #00f
+			background: #fff
+		&:after
+			content: ''
+			position: absolute
+			top: 9px
+			right: 20px
+			display: inline-block
+			width: 42px
+			height: 25px
+			background: url('../img/view_all_eye.png') no-repeat right center
+//End .reviews_block

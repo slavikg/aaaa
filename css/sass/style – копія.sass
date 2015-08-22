@@ -1,0 +1,256 @@
+.container
+	@media (min-width: 1920px)
+		width: 1704px
+		padding-right: 20px
+		padding-left: 20px
+.row
+	@media (min-width: 1920px)
+		margin-right: -20px
+		margin-left: -20px
+.col-bg-2,
+.col-bg-3,
+.col-bg-4,
+.col-bg-10
+	@media (min-width: 1920px)
+		float: left
+		position: relative
+		min-height: 1px
+		padding-right: 20px
+		padding-left: 20px
+.col-bg-2
+	@media (min-width: 1920px)
+		width: 16.6667%
+.col-bg-3
+	@media (min-width: 1920px)
+		width: 25%
+.col-bg-4
+	@media (min-width: 1920px)
+		width: 33.3333%
+.col-bg-10
+	@media (min-width: 1920px)
+		width: 83.3333%
+ul,
+ol,
+h1,
+h2,
+h3,
+h4
+	margin: 0px
+li
+	list-style: none
+a,
+a:focus,
+a:hover
+	text-decoration: none
+body
+	margin-top: 50px
+header
+	background: #00f
+	padding-top: 11px
+	padding-bottom: 10px
+	li
+		list-style: none
+		float: left
+		a
+			font-size: 16px
+			line-height: 20px
+			color: #ffff01
+			&:focus
+				color: #ffff01
+				text-decoration: none
+			&:hover
+				color: #fff
+				text-decoration: none
+	nav
+		padding-top: 4px
+		li
+			margin-right: 25px
+			&:last-child
+				margin-right: 0px
+			a
+				font-family: ProximaNova-Regular, Arial
+	.country
+		position: relative
+		// left: 45px
+		left: 14%
+		padding-top: 4px
+		li
+			margin-right: 4px
+			&::after
+				content: ''
+				display: inline-block
+				width: 2px
+				height: 11px
+				background: #ffff0f 1px
+				margin-left: 5px
+			&:last-child::after
+				display: none
+			a
+				font-family: ProximaNova-Bold, Arial
+	.free_call
+		margin-left: 10.8%
+		h4
+			display: inline-block
+			font-family: ProximaNova-Regular, Arial
+			font-size: 21px
+			line-height: 26px
+			color: #ffff01
+			text-transform: uppercase
+			&.banner
+				color: #00f
+				background: #ffff01
+				border-radius: 4px
+				word-spacing: -1px
+				padding: 2px 8px 0px 8px
+				margin-right: 11px
+			em
+				display: inline-block
+				width: 4px
+				border-bottom: 2px solid #ffff01
+				margin-bottom: 6px
+				margin: 0px 1px 6px
+	.online_quote
+		float: right
+		font-family: ProximaNova-Bold, Arial
+		margin-right: 1px
+		a
+			color: #ffff01
+			&:hover
+				color: #fff
+				span
+					background-position: left bottom
+		h4,
+		span
+			display: inline-block
+			font-size: 16px
+		h4
+			line-height: 20px
+			margin-right: 6px
+		span
+			width: 31px
+			height: 29px
+			line-height: 29px
+			background: url('../img/online_quote_bg.png')
+			text-align: center
+	//End .online_quote
+.header_nav_and_slider
+	position: relative
+	width: 100%
+	height: 100%
+	overflow: hidden
+	.slider_top_height
+		position: absolute
+		height: 100%
+	.logo_and_nav
+		position: relative
+		background: #ffff01
+		padding-top: 46px
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 0px
+			right: 100%
+			display: block
+			height: 100%
+			background: #ffff01
+			z-index: -1
+		&::before
+			right: 100%
+			width: 1000%
+		&::after
+			left: 100%
+			width: 40px
+		.logo
+			margin-left: -1px
+		nav
+			margin-top: 51px
+			margin-left: -1px
+			padding-bottom: 67px
+			li
+				margin-bottom: 20px
+				&:nth-child(1) a::before
+					background-position: 0px 0px
+				&:nth-child(2)
+					margin-bottom: 19px
+					a
+						line-height: 42px
+						&::before
+							background-position: 0px -54px
+				&:nth-child(3)
+					margin-bottom: 18px
+					a
+						line-height: 36px
+						&::before
+							background-position: 0px -115px
+				&:nth-child(4)
+					margin-bottom: 18px
+					a
+						line-height: 45px
+						&::before
+							background-position: 0px -169px
+				&:nth-child(5)
+					margin-bottom: 22px
+					a::before
+						background-position: 0px -232px
+				&:nth-child(6)
+					margin-bottom: 25px
+					a
+						line-height: 39px
+						&::before
+							background-position: 0px -288px
+				&:nth-child(7)
+					margin-bottom: 27px
+					a
+						line-height: 27px
+						&::before
+							background-position: 0px -352px
+				&:nth-child(8)
+					margin-bottom: 30px
+					a::before
+						background-position: 0px -406px
+				&:nth-child(9) a
+					line-height: 22px
+					&::before
+						background-position: 0px -470px
+			a
+				position: relative
+				display: inline-block
+				font-family: ProximaNova-SemiBold, Arial
+				font-size: 18px
+				line-height: 34px
+				color: #00f
+				padding-left: 62px
+				transition: all .25s linear
+				-webkit-transition: all .25s linear
+				-moz-transition: all .25s linear
+				-o-transition: all .25s linear
+				&:hover
+					opacity: 1 !important
+				&::before
+					content: ''
+					position: absolute
+					top: 0px
+					left: 0px
+					display: block
+					width: 45px
+					height: 45px
+					background: url('../img/nav_logo_bars.png')
+	//End nav
+	.slider_top
+		position: relative
+		top: 0px
+		left: 0px
+		height: 100%
+		width: 100%
+		background: #d5d5d5
+		img,
+		h1,
+		.read_more
+			position: absolute
+		.slick-prev,
+		.slick-next,
+		.slick-dots
+			position: absolute
+	//End .slider_top
+//End .header_nav_and_slider
