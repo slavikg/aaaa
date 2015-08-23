@@ -756,3 +756,52 @@ header .online_quote span {
   font-size: 18px;
   line-height: 26px;
 }
+
+.instagram_feed li {
+  position: relative;
+  width: 16.6666%;
+  height: 321px;
+  float: left;
+  overflow: hidden;
+}
+.instagram_feed img {
+  background: #b3b3b3;
+}
+.instagram_feed .information {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 0%;
+  background: rgba(255, 255, 1, 0.9);
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+}
+.instagram_feed li:hover .information {
+  width: 100%;
+}
+.instagram_feed h2,
+.instagram_feed h3,
+.instagram_feed h4 {
+  opacity: 0;
+  color: blue;
+}
+.instagram_feed li:hover h2,
+.instagram_feed li:hover h3,
+.instagram_feed li:hover h4 {
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition-delay: 0.35s;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  -o-transition-delay: 0.35s;
+  opacity: 1;
+}
+.instagram_feed h2 {
+  background: url("../img/instagram_icon.png");
+  background-repeat: no-repeat;
+}

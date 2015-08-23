@@ -616,3 +616,47 @@ header
 			font-size: 18px
 			line-height: 26px
 //End .product_categories
+.instagram_feed
+	li
+		position: relative
+		width: 16.6666%
+		height: 321px
+		float: left
+		overflow: hidden
+	img
+		background: #b3b3b3
+	.information
+		position: absolute
+		top: 0px
+		left: 0px
+		height: 100%
+		width: 0%
+		background: rgba(255, 255, 1, .9)
+		transition: all .25s linear
+		-webkit-transition: all .25s linear
+		-moz-transition: all .25s linear
+		-o-transition: all .25s linear
+	li:hover .information
+		width: 100%
+	h2,
+	h3,
+	h4
+		opacity: 0
+		color: #00f
+	li:hover
+		h2,
+		h3,
+		h4
+			transition: all .25s linear
+			-webkit-transition: all .25s linear
+			-moz-transition: all .25s linear
+			-o-transition: all .25s linear
+			transition-delay: .35s
+			-webkit-transition-delay: .35s
+			-moz-transition-delay: .35s
+			-o-transition-delay: .35s
+			opacity: 1
+	h2
+		background: url('../img/instagram_icon.png')
+		background-repeat: no-repeat
+//End .instagram_feed
