@@ -228,7 +228,7 @@ header .online_quote span {
   margin-bottom: 20px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(1) a::before {
-  background-position: 0px 0px;
+  background: url("../img/nav_logo_1.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(2) {
   margin-bottom: 19px;
@@ -237,7 +237,7 @@ header .online_quote span {
   line-height: 42px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(2) a::before {
-  background-position: 0px -54px;
+  background: url("../img/nav_logo_2.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(3) {
   margin-bottom: 18px;
@@ -246,7 +246,7 @@ header .online_quote span {
   line-height: 36px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(3) a::before {
-  background-position: 0px -115px;
+  background: url("../img/nav_logo_3.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(4) {
   margin-bottom: 18px;
@@ -255,13 +255,13 @@ header .online_quote span {
   line-height: 45px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(4) a::before {
-  background-position: 0px -169px;
+  background: url("../img/nav_logo_4.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(5) {
   margin-bottom: 22px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(5) a::before {
-  background-position: 0px -232px;
+  background: url("../img/nav_logo_5.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(6) {
   margin-bottom: 25px;
@@ -270,7 +270,7 @@ header .online_quote span {
   line-height: 39px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(6) a::before {
-  background-position: 0px -288px;
+  background: url("../img/nav_logo_6.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(7) {
   margin-bottom: 27px;
@@ -279,19 +279,19 @@ header .online_quote span {
   line-height: 27px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(7) a::before {
-  background-position: 0px -352px;
+  background: url("../img/nav_logo_7.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(8) {
   margin-bottom: 30px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(8) a::before {
-  background-position: 0px -406px;
+  background: url("../img/nav_logo_8.png");
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(9) a {
   line-height: 22px;
 }
 .header_nav_and_slider .logo_and_nav nav li:nth-child(9) a::before {
-  background-position: 0px -470px;
+  background: url("../img/nav_logo_9.png");
 }
 .header_nav_and_slider .logo_and_nav nav a {
   position: relative;
@@ -674,6 +674,19 @@ header .online_quote span {
   line-height: 44px;
   color: blue;
   margin-bottom: 38px;
+}
+.product_categories li:hover .img_box {
+  position: relative;
+}
+.product_categories li:hover .img_box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.3);
 }
 .product_categories img {
   width: 100%;
