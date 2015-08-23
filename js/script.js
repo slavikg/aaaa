@@ -8,7 +8,7 @@ $(document).ready(function() {
 	//Initialize sliders
 	StartSliders();
 	
-	//Add Dash for reviews
+	//Add Dash for reviews and change button text
 	ChangeReviewsLayout();
 
 	// Column2Height($('.header_nav_and_slider .logo_and_nav'),

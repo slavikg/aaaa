@@ -660,3 +660,77 @@ header .online_quote span {
   height: 25px;
   background: url("../img/view_all_eye.png") no-repeat right center;
 }
+
+.product_categories {
+  padding-top: 76px;
+  padding-bottom: 62px;
+}
+.product_categories li {
+  margin-bottom: 38px;
+}
+.product_categories .name {
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 36px;
+  line-height: 44px;
+  color: blue;
+  margin-bottom: 38px;
+}
+.product_categories img {
+  width: 100%;
+  height: 259px;
+  background: #d5d5d5;
+}
+.product_categories .information {
+  background: #ffff01;
+  padding: 27px 28px 24px 32px;
+}
+.product_categories .information .logo {
+  display: block;
+  width: 65px;
+  height: 59px;
+  background: url("../img/product_categories_logo_bars.png");
+  float: left;
+  margin-right: 22px;
+}
+.product_categories ul li:nth-child(1) .information .logo {
+  background-position: 0px 6px;
+}
+.product_categories ul li:nth-child(2) .information .logo {
+  background-position: 0px -77px;
+}
+.product_categories ul li:nth-child(3) .information .logo {
+  background-position: 0px -166px;
+}
+.product_categories ul li:nth-child(4) .information .logo {
+  background-position: 0px -261px;
+}
+.product_categories ul li:nth-child(5) .information .logo {
+  background-position: 0px -348px;
+}
+.product_categories ul li:nth-child(6) .information .logo {
+  background-position: 0px -442px;
+}
+.product_categories ul li:nth-child(7) .information .logo {
+  background-position: 0px -523px;
+}
+.product_categories ul li:nth-child(8) .information .logo {
+  background-position: 0px -614px;
+}
+.product_categories ul li .text_box {
+  float: left;
+}
+.product_categories ul li h3,
+.product_categories ul li h4 {
+  color: blue;
+}
+.product_categories ul li h3 {
+  font-family: ProximaNova-Bold, Arial;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 2px;
+}
+.product_categories ul li h4 {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 26px;
+}
