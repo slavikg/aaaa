@@ -688,33 +688,38 @@ header .online_quote span {
   display: block;
   width: 65px;
   height: 59px;
-  background: url("../img/product_categories_logo_bars.png");
   float: left;
   margin-right: 22px;
 }
+.product_categories li:hover .information {
+  background: blue;
+}
 .product_categories ul li:nth-child(1) .information .logo {
-  background-position: 0px 6px;
+  background: url("../img/product_categories_logo_1.png");
+}
+.product_categories ul li:hover:nth-child(1) .information .logo {
+  background: url("../img/product_categories_logo_1_hover.png");
 }
 .product_categories ul li:nth-child(2) .information .logo {
-  background-position: 0px -77px;
+  background: url("../img/product_categories_logo_2.png");
 }
 .product_categories ul li:nth-child(3) .information .logo {
-  background-position: 0px -166px;
+  background: url("../img/product_categories_logo_3.png");
 }
 .product_categories ul li:nth-child(4) .information .logo {
-  background-position: 0px -261px;
+  background: url("../img/product_categories_logo_4.png");
 }
 .product_categories ul li:nth-child(5) .information .logo {
-  background-position: 0px -348px;
+  background: url("../img/product_categories_logo_5.png");
 }
 .product_categories ul li:nth-child(6) .information .logo {
-  background-position: 0px -442px;
+  background: url("../img/product_categories_logo_6.png");
 }
 .product_categories ul li:nth-child(7) .information .logo {
-  background-position: 0px -523px;
+  background: url("../img/product_categories_logo_7.png");
 }
 .product_categories ul li:nth-child(8) .information .logo {
-  background-position: 0px -614px;
+  background: url("../img/product_categories_logo_8.png");
 }
 .product_categories ul li .text_box {
   float: left;
@@ -722,6 +727,10 @@ header .online_quote span {
 .product_categories ul li h3,
 .product_categories ul li h4 {
   color: blue;
+}
+.product_categories ul li:hover h3,
+.product_categories ul li:hover h4 {
+  color: #ffff01;
 }
 .product_categories ul li h3 {
   font-family: ProximaNova-Bold, Arial;
