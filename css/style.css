@@ -18,6 +18,7 @@
   .col-bg-3,
   .col-bg-4,
   .col-bg-5,
+  .col-bg-6,
   .col-bg-7 {
     float: left;
     position: relative;
@@ -48,6 +49,12 @@
 @media (min-width: 1920px) {
   .col-bg-5 {
     width: 41.6667%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .col-bg-6 {
+    width: 50%;
   }
 }
 
@@ -831,4 +838,103 @@ header .online_quote span {
   bottom: 23px;
   font-family: ProximaNova-Bold, Arial;
   line-height: 17px;
+}
+
+.video_follow_catalogue {
+  padding-top: 66px;
+  padding-bottom: 96px;
+}
+.video_follow_catalogue h2 {
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 36px;
+  line-height: 44px;
+  color: blue;
+  margin-bottom: 36px;
+}
+.video_follow_catalogue .latest_video iframe {
+  width: 100%;
+  height: 450px;
+}
+.video_follow_catalogue .follow_us li {
+  margin-bottom: 32px;
+}
+.video_follow_catalogue .follow_us a {
+  position: relative;
+  display: inline-block;
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 24px;
+  line-height: 29px;
+  color: blue;
+  width: 100%;
+  background: #ffff01;
+  padding: 23px 25px 19px 86px;
+}
+.video_follow_catalogue .follow_us a:hover {
+  color: #ffff01;
+  background: blue;
+}
+.video_follow_catalogue .follow_us a::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 28px;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  background: url("../img/social_networks_bar.png") no-repeat;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(1) a:hover::before {
+  background-position: right 0px;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(2) a::before {
+  top: 21px;
+  background-position: 0px -52px;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(2) a:hover::before {
+  background-position: right -52px;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(3) a::before {
+  top: 21px;
+  background-position: 0px -102px;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(3) a:hover::before {
+  background-position: right -102px;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(4) a::before {
+  top: 20px;
+  background-position: 0px -152px;
+}
+.video_follow_catalogue .follow_us ul li:nth-child(4) a:hover::before {
+  background-position: right -152px;
+}
+.video_follow_catalogue .catalogue li {
+  margin-bottom: 32px;
+}
+.video_follow_catalogue .catalogue a {
+  position: relative;
+  display: inline-block;
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 24px;
+  line-height: 29px;
+  color: blue;
+  width: 100%;
+  background: #ffff01;
+  padding: 23px 25px 19px 28px;
+}
+.video_follow_catalogue .catalogue a:hover {
+  color: #ffff01;
+  background: blue;
+}
+.video_follow_catalogue .catalogue a::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background: url("../img/catalogue_arrow_bar.png") no-repeat;
+}
+.video_follow_catalogue .catalogue a:hover::after {
+  background-position: right 0px;
 }

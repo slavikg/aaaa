@@ -1,3 +1,6 @@
+$bl:	#00f
+$ye:	#ffff01
+
 .container
 	@media (min-width: 1920px)
 		width: 1704px
@@ -11,6 +14,7 @@
 .col-bg-3,
 .col-bg-4,
 .col-bg-5,
+.col-bg-6,
 .col-bg-7
 	@media (min-width: 1920px)
 		float: left
@@ -30,6 +34,9 @@
 .col-bg-5
 	@media (min-width: 1920px)
 		width: 41.6667%
+.col-bg-6
+	@media (min-width: 1920px)
+		width: 50%
 .col-bg-7
 	@media (min-width: 1920px)
 		width: 58.3333%
@@ -49,7 +56,7 @@ a:hover
 body
 	margin-top: 50px
 header
-	background: #00f
+	background: $bl
 	padding-top: 11px
 	padding-bottom: 10px
 	li
@@ -58,9 +65,9 @@ header
 		a
 			font-size: 16px
 			line-height: 20px
-			color: #ffff01
+			color: $ye
 			&:focus
-				color: #ffff01
+				color: $ye
 				text-decoration: none
 			&:hover
 				color: #fff
@@ -98,11 +105,11 @@ header
 			font-family: ProximaNova-Regular, Arial
 			font-size: 21px
 			line-height: 26px
-			color: #ffff01
+			color: $ye
 			text-transform: uppercase
 			&.banner
-				color: #00f
-				background: #ffff01
+				color: $bl
+				background: $ye
 				border-radius: 4px
 				word-spacing: -1px
 				padding: 2px 8px 0px 8px
@@ -110,7 +117,7 @@ header
 			em
 				display: inline-block
 				width: 4px
-				border-bottom: 2px solid #ffff01
+				border-bottom: 2px solid $ye
 				margin-bottom: 6px
 				margin: 0px 1px 6px
 	.online_quote
@@ -118,7 +125,7 @@ header
 		font-family: ProximaNova-Bold, Arial
 		margin-right: 1px
 		a
-			color: #ffff01
+			color: $ye
 			&:hover
 				color: #fff
 				span
@@ -153,7 +160,7 @@ header
 		position: relative
 		float: left
 		width: 21.458333%
-		background: #ffff01
+		background: $ye
 		padding-top: 46px
 		padding-left: 6.68%
 		.logo
@@ -223,7 +230,7 @@ header
 				font-family: ProximaNova-SemiBold, Arial
 				font-size: 18px
 				line-height: 34px
-				color: #00f
+				color: $bl
 				padding-left: 62px
 				transition: all .25s linear
 				-webkit-transition: all .25s linear
@@ -256,7 +263,7 @@ header
 				font-family: KroppenRound-Bold, Arial
 				font-size: 86px
 				line-height: 87px
-				color: #00f
+				color: $bl
 				word-spacing: 2px
 				margin-bottom: 81px
 				.bg
@@ -270,8 +277,8 @@ header
 				font-family: ProximaNova-Regular, Arial
 				font-size: 30px
 				line-height: 36px
-				color: #00f
-				background: #ffff01
+				color: $bl
+				background: $ye
 				text-transform: uppercase
 				border-radius: 5px
 				padding: 14px 24px 12px 21px
@@ -316,7 +323,7 @@ header
 		font-family: ProximaNova-SemiBold, Arial
 		font-size: 30px
 		line-height: 36px
-		color: #00f
+		color: $bl
 		letter-spacing: -1px
 		margin-top: 46px
 	.logo
@@ -329,7 +336,7 @@ header
 		font-family: ProximaNova-SemiBold, Arial
 		font-size: 36px
 		line-height: 44px
-		color: #00f
+		color: $bl
 		margin-top: 0px
 		margin-bottom: 41px
 	.cd-item
@@ -358,7 +365,7 @@ header
 				height: 25px
 				background: url('../img/quick_view_eye.png')
 		.information
-			background: #ffff01
+			background: $ye
 			padding: 22px 30px 24px 29px
 			.information_box
 				width: 55%
@@ -367,7 +374,7 @@ header
 			h3,
 			h4
 				display: inline-block
-				color: #00f
+				color: $bl
 			h3
 				font-family: ProximaNova-SemiBold, Arial
 				font-size: 24px
@@ -389,7 +396,7 @@ header
 					width: 43px
 					height: 43px
 					border-radius: 50px
-					border: 3px solid #00f
+					border: 3px solid $bl
 					// transition: all .25s linear
 					// -webkit-transition: all .25s linear
 					// -moz-transition: all .25s linear
@@ -400,7 +407,7 @@ header
 						font-family: ProximaNova-SemiBold, Arial
 						font-size: 18px
 						line-height: 38px
-						color: #ffff01
+						color: $ye
 						text-transform: uppercase
 						margin-left: 19px
 						// transition: margin-left .25s linear
@@ -420,7 +427,7 @@ header
 						background-position: top left
 		&:hover .read_more a 
 			width: 176px
-			background: #00f
+			background: $bl
 			&::before
 				display: inline-block
 				// -webkit-transition-delay: 0.5s
@@ -461,7 +468,7 @@ header
 				background-position: left bottom
 //End .featured_products
 .reviews_block
-	background: #00f
+	background: $bl
 	padding-top: 76px
 	padding-bottom: 60px
 	.cd-testimonials-wrapper
@@ -483,14 +490,14 @@ header
 		font-style: normal
 		font-size: 22px
 		line-height: 32px
-		color: #ffff01
+		color: $ye
 		margin-bottom: 32px
 	.cd-author .cd-author-info li
 		display: inline-block
 		font-family: ProximaNova-SemiBold, Arial
 		font-size: 30px
 		line-height: 36px
-		color: #ffff01
+		color: $ye
 		&:first-child
 			white-space: pre-wrap
 		// &::after
@@ -507,13 +514,13 @@ header
 				button
 					width: 20px
 					height: 20px
-					border: 3px solid #ffff01
+					border: 3px solid $ye
 					border-radius: 50%
 					color: transparent
 					background: transparent
 					outline: none
 				&.slick-active button
-					background: #ffff01
+					background: $ye
 	.cd-see-all
 		position: relative
 		display: inline-block
@@ -521,15 +528,15 @@ header
 		font-size: 18px
 		font-weight: normal
 		line-height: 22px
-		color: #00f
+		color: $bl
 		width: initial
 		height: initial
-		background: #ffff01
+		background: $ye
 		border-radius: 50px
 		padding: 10px 84px 11px 20px
 		margin-top: 48px
 		&:hover
-			color: #00f
+			color: $bl
 			background: #fff
 		&:after
 			content: ''
@@ -550,7 +557,7 @@ header
 		font-family: ProximaNova-SemiBold, Arial
 		font-size: 36px
 		line-height: 44px
-		color: #00f
+		color: $bl
 		margin-bottom: 38px
 	a:hover .img_box
 		position: relative
@@ -568,7 +575,7 @@ header
 		height: 259px
 		background: #d5d5d5
 	.information
-		background: #ffff01
+		background: $ye
 		padding: 27px 28px 24px 32px
 		.logo
 			display: block
@@ -577,7 +584,7 @@ header
 			float: left
 			margin-right: 22px
 	a:hover .information
-		background: #00f
+		background: $bl
 	ul li
 		&:nth-child(1) .information .logo
 			background: url('../img/product_categories_logo_1.png')
@@ -601,11 +608,11 @@ header
 			float: left
 		h3,
 		h4
-			color: #00f
+			color: $bl
 		a:hover
 			h3,
 			h4
-				color: #ffff01
+				color: $ye
 		h3
 			font-family: ProximaNova-Bold, Arial
 			font-size: 24px
@@ -650,7 +657,7 @@ header
 	h3,
 	h4
 		font-size: 14px
-		color: #00f
+		color: $bl
 		opacity: 0
 		margin-right: 29px
 		margin-left: 29px
@@ -684,3 +691,91 @@ header
 		font-family: ProximaNova-Bold, Arial
 		line-height: 17px
 //End .instagram_feed
+.video_follow_catalogue
+	padding-top: 66px
+	padding-bottom: 96px
+	h2
+		font-family: ProximaNova-SemiBold, Arial
+		font-size: 36px
+		line-height: 44px
+		color: $bl
+		margin-bottom: 36px
+	.latest_video
+		iframe
+			width: 100%
+			height: 450px
+	.follow_us
+		li
+			margin-bottom: 32px
+		a
+			position: relative
+			display: inline-block
+			font-family: ProximaNova-Regular, Arial
+			font-size: 24px
+			line-height: 29px
+			color: $bl
+			width: 100%
+			background: $ye
+			padding: 23px 25px 19px 86px
+			&:hover
+				color: $ye
+				background: $bl
+			&::before
+				content: ''
+				position: absolute
+				top: 22px
+				left: 28px
+				display: inline-block
+				width: 31px
+				height: 31px
+				background: url('../img/social_networks_bar.png') no-repeat
+		ul li
+			&:nth-child(1) a
+				&:hover::before
+					background-position: right 0px
+			&:nth-child(2) a
+				&::before
+					top: 21px
+					background-position: 0px -52px
+				&:hover::before
+					background-position: right -52px
+			&:nth-child(3) a
+				&::before
+					top: 21px
+					background-position: 0px -102px
+				&:hover::before
+					background-position: right -102px
+			&:nth-child(4) a
+				&::before
+					top: 20px
+					background-position: 0px -152px
+				&:hover::before
+					background-position: right -152px
+	.catalogue
+		li
+			margin-bottom: 32px
+		a
+			position: relative
+			display: inline-block
+			font-family: ProximaNova-SemiBold, Arial
+			font-size: 24px
+			line-height: 29px
+			color: $bl
+			width: 100%
+			background: $ye
+			padding: 23px 25px 19px 28px
+			&:hover
+				color: $ye
+				background: $bl
+			&::after
+				content: ''
+				position: absolute
+				top: 14px
+				right: 30px
+				display: inline-block
+				width: 43px
+				height: 43px
+				background: url('../img/catalogue_arrow_bar.png') no-repeat
+			&:hover::after
+				background-position: right 0px
+//End .video_follow_catalogue
