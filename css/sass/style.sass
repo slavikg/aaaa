@@ -552,7 +552,7 @@ header
 		line-height: 44px
 		color: #00f
 		margin-bottom: 38px
-	li:hover .img_box
+	a:hover .img_box
 		position: relative
 		&::after
 			content: ''
@@ -576,12 +576,12 @@ header
 			height: 59px
 			float: left
 			margin-right: 22px
-	li:hover .information
+	a:hover .information
 		background: #00f
 	ul li
 		&:nth-child(1) .information .logo
 			background: url('../img/product_categories_logo_1.png')
-		&:hover:nth-child(1) .information .logo
+		&:nth-child(1) a:hover .information .logo
 			background: url('../img/product_categories_logo_1_hover.png')
 		&:nth-child(2) .information .logo
 			background: url('../img/product_categories_logo_2.png')
@@ -602,7 +602,7 @@ header
 		h3,
 		h4
 			color: #00f
-		&:hover
+		a:hover
 			h3,
 			h4
 				color: #ffff01
@@ -618,13 +618,20 @@ header
 //End .product_categories
 .instagram_feed
 	li
-		position: relative
 		width: 16.6666%
 		height: 321px
 		float: left
 		overflow: hidden
+	a
+		position: relative
+		display: inline-block
+		overflow: hidden
+		width: 100%
+		height: 100%
 	img
 		background: #b3b3b3
+		width: 100%
+		height: 100%
 	.information
 		position: absolute
 		top: 0px
@@ -636,27 +643,44 @@ header
 		-webkit-transition: all .25s linear
 		-moz-transition: all .25s linear
 		-o-transition: all .25s linear
-	li:hover .information
+		padding-top: 27px
+	a:hover .information
 		width: 100%
 	h2,
 	h3,
 	h4
-		opacity: 0
+		font-size: 14px
 		color: #00f
-	li:hover
+		opacity: 0
+		margin-right: 29px
+		margin-left: 29px
+	a:hover
 		h2,
 		h3,
 		h4
-			transition: all .25s linear
-			-webkit-transition: all .25s linear
-			-moz-transition: all .25s linear
-			-o-transition: all .25s linear
+			transition: opacity .25s linear
+			-webkit-transition: opacity .25s linear
+			-moz-transition: opacity .25s linear
+			-o-transition: opacity .25s linear
 			transition-delay: .35s
 			-webkit-transition-delay: .35s
 			-moz-transition-delay: .35s
 			-o-transition-delay: .35s
 			opacity: 1
 	h2
+		font-family: ProximaNova-Bold, Arial
+		line-height: 24px
 		background: url('../img/instagram_icon.png')
 		background-repeat: no-repeat
+		padding-left: 38px
+		margin-bottom: 21px
+	h3
+		font-family: ProximaNova-SemiBold, Arial
+		line-height: 19px
+	h4
+		position: absolute
+		left: 0px
+		bottom: 23px
+		font-family: ProximaNova-Bold, Arial
+		line-height: 17px
 //End .instagram_feed
