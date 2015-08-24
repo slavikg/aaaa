@@ -938,3 +938,99 @@ header .online_quote span {
 .video_follow_catalogue .catalogue a:hover::after {
   background-position: right 0px;
 }
+
+footer .main {
+  background: blue;
+  color: #ffff01;
+  padding-top: 53px;
+  padding-bottom: 46px;
+}
+footer .main a,
+footer .main h2 {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 24px;
+}
+footer .main a {
+  color: inherit;
+}
+footer .main a:hover {
+  color: white;
+}
+footer .main .links {
+  word-spacing: 1px;
+}
+footer .main .emergency_contact {
+  margin-left: 10.9%;
+}
+footer .main .emergency_contact h2 {
+  word-spacing: 1px;
+}
+footer .main .emergency_contact .time {
+  text-transform: uppercase;
+}
+footer .main .emergency_contact .phone {
+  word-spacing: 0px;
+}
+footer .main .information {
+  margin-left: 9%;
+}
+footer .main .information h2 {
+  word-spacing: 1px;
+}
+footer .main .information .text {
+  width: 70%;
+}
+footer .main .information .phone_fax {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+footer .main .information .email {
+  font-family: ProximaNova-SemiBold, Arial;
+}
+footer .main .soc_networks {
+  float: right;
+  margin-top: 6px;
+}
+footer .main .soc_networks li {
+  display: inline-block;
+  margin-right: 25px;
+}
+footer .main .soc_networks li:last-child {
+  margin-right: 0px;
+}
+footer .main .soc_networks a {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  background: url("../img/footer_social_networks_bar.png");
+  background-repeat: no-repeat;
+}
+footer .main .soc_networks li:nth-child(1) a:hover {
+  background-position: right 0px;
+}
+footer .main .soc_networks li:nth-child(2) a {
+  background-position: left -52px;
+}
+footer .main .soc_networks li:nth-child(2) a:hover {
+  background-position: right -52px;
+}
+footer .main .soc_networks li:nth-child(3) a {
+  background-position: left -102px;
+}
+footer .main .soc_networks li:nth-child(3) a:hover {
+  background-position: right -102px;
+}
+footer .main .soc_networks li:nth-child(4) a {
+  background-position: left -152px;
+}
+footer .main .soc_networks li:nth-child(4) a:hover {
+  background-position: right -152px;
+}
+footer .copyright {
+  background: #343434;
+  color: #878787;
+}
+footer .copyright a {
+  color: inherit;
+}
