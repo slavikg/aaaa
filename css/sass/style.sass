@@ -59,6 +59,7 @@ header
 	background: $bl
 	padding-top: 11px
 	padding-bottom: 10px
+	z-index: 2 !important
 	li
 		list-style: none
 		float: left
@@ -907,3 +908,17 @@ footer
 					opacity: 1
 	//End .copyright
 //Footer
+.online_quote_popup
+	position: fixed
+	top: -999%
+	left: 0px
+	width: 100%
+	height: 100%
+	z-index: 3
+	transition: all .7s ease-in-out
+	-webkit-transition: all .7s ease-in-out
+	-moz-transition: all .7s ease-in-out
+	-o-transition: all .7s ease-in-out
+	&.show
+		top: 0px
+//End .online_quote_popup

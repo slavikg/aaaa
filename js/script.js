@@ -15,7 +15,22 @@ $(document).ready(function() {
 	//Add Dash for reviews and change button text
 	ChangeReviewsLayout();
 
-
+	$('header .online_quote a').on('click', function() {
+		$('.online_quote_popup').addClass('show');
+	});
+	$('.online_quote_popup').slick({
+		arrows: false,
+		dots: false,
+		touchMove: false,
+		draggable: false,
+		infinite: false,
+		fade: true,
+		init: function(){
+			$('.step').each(function(){
+				$(this).fadeIn();
+			});
+		}
+	});
 	// Column2Height($('.header_nav_and_slider .logo_and_nav'),
 	// 	$('.header_nav_and_slider .slider_top'));
 	// $(window).resize(Column2Height($('.header_nav_and_slider .logo_and_nav'),
