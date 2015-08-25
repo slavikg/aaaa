@@ -8,8 +8,13 @@ $(document).ready(function() {
 	//Initialize sliders
 	StartSliders();
 	
+	//Set Slider top height sidebar
+	HeightNavAndSliderTop();
+	$(window).resize(HeightNavAndSliderTop);
+
 	//Add Dash for reviews and change button text
 	ChangeReviewsLayout();
+
 
 	// Column2Height($('.header_nav_and_slider .logo_and_nav'),
 	// 	$('.header_nav_and_slider .slider_top'));
@@ -68,6 +73,12 @@ function StartSliders() {
 		autoplay: true,
 		autoplaySpeed: 2000
 	});
+}
+
+function HeightNavAndSliderTop () {
+	var heightNav = $('.logo_and_nav').outerHeight();
+	$('.header_nav_and_slider .slider_top img').outerHeight(heightNav);
+	$('.header_nav_and_slider .slider_top').outerHeight(heightNav);
 }
 
 function ChangeReviewsLayout() {

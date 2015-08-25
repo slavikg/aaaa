@@ -210,11 +210,6 @@ header .online_quote span {
   position: absolute;
   height: 100%;
 }
-.header_nav_and_slider .logo_and_nav,
-.header_nav_and_slider .slider_top {
-  padding-bottom: 10000px;
-  margin-bottom: -10000px;
-}
 .header_nav_and_slider .logo_and_nav {
   position: relative;
   float: left;
@@ -332,6 +327,9 @@ header .online_quote span {
   width: 78.54167%;
   height: 100%;
   background: #d5d5d5;
+}
+.header_nav_and_slider .slider_top img {
+  width: 100%;
 }
 .header_nav_and_slider .slider_top .slider_top_content {
   position: absolute;
