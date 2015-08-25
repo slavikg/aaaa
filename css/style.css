@@ -1030,7 +1030,75 @@ footer .main .soc_networks li:nth-child(4) a:hover {
 footer .copyright {
   background: #343434;
   color: #878787;
+  padding-top: 52px;
+  padding-bottom: 58px;
 }
 footer .copyright a {
   color: inherit;
+}
+footer .copyright a:hover {
+  color: white;
+}
+footer .copyright .text_box {
+  float: left;
+}
+footer .copyright .text_box h2,
+footer .copyright .text_box span,
+footer .copyright .text_box li::after,
+footer .copyright .text_box a {
+  font-family: ProximaNova-Bold, Arial;
+  font-size: 18px;
+  line-height: 24px;
+}
+footer .copyright .text_box h2 {
+  word-spacing: -1px;
+  margin-bottom: 8px;
+}
+footer .copyright .text_box span,
+footer .copyright .text_box ul,
+footer .copyright .text_box li {
+  display: inline-block;
+}
+footer .copyright .text_box .members {
+  margin-bottom: 8px;
+}
+footer .copyright .text_box .members ul {
+  margin-left: -1px;
+}
+footer .copyright .text_box .members ul li {
+  margin-left: 1px;
+}
+footer .copyright .text_box .members ul li::after {
+  content: " -";
+  display: inline-block;
+  margin-left: 4px;
+}
+footer .copyright .text_box .members ul li:last-child::after {
+  display: none;
+}
+footer .copyright .text_box .members a {
+  text-transform: uppercase;
+}
+footer .copyright .text_box .partners ul li {
+  margin-right: 9px;
+}
+footer .copyright .text_box .partners ul li:last-child {
+  margin-right: 0px;
+}
+footer .copyright .text_box .partners a {
+  word-spacing: -2px;
+}
+footer .copyright .logo {
+  margin-top: 6px;
+  float: right;
+}
+footer .copyright .logo a {
+  display: inline-block;
+  overflow: hidden;
+}
+footer .copyright .logo img {
+  opacity: 0.5;
+}
+footer .copyright .logo img:hover {
+  opacity: 1;
 }

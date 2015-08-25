@@ -850,7 +850,58 @@ footer
 	.copyright
 		background: #343434
 		color: #878787
+		padding-top: 52px
+		padding-bottom: 58px
 		a
 			color: inherit
+			&:hover
+				color: #fff
+		.text_box
+			float: left
+			h2,
+			span,
+			li::after,
+			a
+				font-family: ProximaNova-Bold, Arial
+				font-size: 18px
+				line-height: 24px
+			h2
+				word-spacing: -1px
+				margin-bottom: 8px
+			span,
+			ul,
+			li
+				display: inline-block
+			.members
+				margin-bottom: 8px
+				ul
+					margin-left: -1px
+					li
+						margin-left: 1px
+						&::after
+							content: ' -'
+							display: inline-block
+							margin-left: 4px
+						&:last-child::after
+							display: none
+				a
+					text-transform: uppercase
+			.partners
+				ul li
+					margin-right: 9px
+					&:last-child
+						margin-right: 0px
+				a
+					word-spacing: -2px
+		.logo
+			margin-top: 6px
+			float: right
+			a
+				display: inline-block
+				overflow: hidden
+			img
+				opacity: .5
+				&:hover
+					opacity: 1
 	//End .copyright
 //Footer
