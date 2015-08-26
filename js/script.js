@@ -76,7 +76,7 @@ $(document).ready(function() {
 				$.ajax({
 					url: ajaxurl,
 					method: 'POST',
-					data: $('.online_quote_popup #get-quote-form').serialize(),
+					data: $('.online_quote_popup .get_quote_form').serialize(),
 					success: function(data){
 						//$('.progress-bar-status').css('width', '100%');
 						$('.online_quote_popup .steps').slick('slickNext');

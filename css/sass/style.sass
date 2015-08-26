@@ -1,5 +1,9 @@
 $bl:	#00f
 $ye:	#ffff01
+$pnr:	ProximaNova-Regular, Arial
+$pnb:	ProximaNova-Bold, Arial
+$pnsb:	ProximaNova-SemiBold, Arial
+$krb:	KroppenRound-Bold, Arial
 
 .container
 	@media (min-width: 1920px)
@@ -15,7 +19,8 @@ $ye:	#ffff01
 .col-bg-4,
 .col-bg-5,
 .col-bg-6,
-.col-bg-7
+.col-bg-7,
+.col-bg-8
 	@media (min-width: 1920px)
 		float: left
 		position: relative
@@ -40,6 +45,12 @@ $ye:	#ffff01
 .col-bg-7
 	@media (min-width: 1920px)
 		width: 58.3333%
+.col-bg-8
+	@media (min-width: 1920px)
+		width: 66.6667%
+.col-bg-offset-2
+	@media (min-width: 1920px)
+		margin-left: 16.6667%
 ul,
 ol,
 h1,
@@ -80,7 +91,7 @@ header
 			&:last-child
 				margin-right: 0px
 			a
-				font-family: ProximaNova-Regular, Arial
+				font-family: $pnr
 	.country
 		position: relative
 		// left: 45px
@@ -98,12 +109,12 @@ header
 			&:last-child::after
 				display: none
 			a
-				font-family: ProximaNova-Bold, Arial
+				font-family: $pnb
 	.free_call
 		margin-left: 10.8%
 		h4
 			display: inline-block
-			font-family: ProximaNova-Regular, Arial
+			font-family: $pnr
 			font-size: 21px
 			line-height: 26px
 			color: $ye
@@ -123,7 +134,7 @@ header
 				margin: 0px 1px 6px
 	.online_quote
 		float: right
-		font-family: ProximaNova-Bold, Arial
+		font-family: $pnb
 		margin-right: 1px
 		a
 			color: $ye
@@ -228,7 +239,7 @@ header
 			a
 				position: relative
 				display: inline-block
-				font-family: ProximaNova-SemiBold, Arial
+				font-family: $pnsb
 				font-size: 18px
 				line-height: 34px
 				color: $bl
@@ -263,7 +274,7 @@ header
 			left: 76px
 			width: 70%
 			h1
-				font-family: KroppenRound-Bold, Arial
+				font-family: $krb
 				font-size: 86px
 				line-height: 87px
 				color: $bl
@@ -277,7 +288,7 @@ header
 					span
 						position: relative
 			.read_more
-				font-family: ProximaNova-Regular, Arial
+				font-family: $pnr
 				font-size: 30px
 				line-height: 36px
 				color: $bl
@@ -323,7 +334,7 @@ header
 	padding-top: 50px
 	padding-bottom: 48px
 	.text
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-size: 30px
 		line-height: 36px
 		color: $bl
@@ -336,7 +347,7 @@ header
 	padding-top: 69px
 	padding-bottom: 91px
 	.name
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-size: 36px
 		line-height: 44px
 		color: $bl
@@ -348,7 +359,7 @@ header
 			height: 396px
 		.cd-trigger
 			top: 0px
-			font-family: ProximaNova-SemiBold, Arial
+			font-family: $pnsb
 			font-size: 19px
 			height: 396px
 			line-height: 396px
@@ -379,13 +390,13 @@ header
 				display: inline-block
 				color: $bl
 			h3
-				font-family: ProximaNova-SemiBold, Arial
+				font-family: $pnsb
 				font-size: 24px
 				line-height: 28px
 				&:hover
 					color: #fff
 			h4
-				font-family: ProximaNova-Regular, Arial
+				font-family: $pnr
 				font-size: 18px
 				line-height: 19px
 				margin-left: 1px
@@ -407,7 +418,7 @@ header
 					&::before
 						content: 'Read more'
 						display: none
-						font-family: ProximaNova-SemiBold, Arial
+						font-family: $pnsb
 						font-size: 18px
 						line-height: 38px
 						color: $ye
@@ -489,7 +500,7 @@ header
 	.slick-next
 		display: none !important
 	.cd-testimonials p
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-style: normal
 		font-size: 22px
 		line-height: 32px
@@ -497,7 +508,7 @@ header
 		margin-bottom: 32px
 	.cd-author .cd-author-info li
 		display: inline-block
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-size: 30px
 		line-height: 36px
 		color: $ye
@@ -527,7 +538,7 @@ header
 	.cd-see-all
 		position: relative
 		display: inline-block
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-size: 18px
 		font-weight: normal
 		line-height: 22px
@@ -557,7 +568,7 @@ header
 	li
 		margin-bottom: 38px
 	.name
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-size: 36px
 		line-height: 44px
 		color: $bl
@@ -617,12 +628,12 @@ header
 			h4
 				color: $ye
 		h3
-			font-family: ProximaNova-Bold, Arial
+			font-family: $pnb
 			font-size: 24px
 			line-height: 29px
 			margin-top: 2px
 		h4
-			font-family: ProximaNova-Regular, Arial
+			font-family: $pnr
 			font-size: 18px
 			line-height: 26px
 //End .product_categories
@@ -678,27 +689,27 @@ header
 			-o-transition-delay: .35s
 			opacity: 1
 	h2
-		font-family: ProximaNova-Bold, Arial
+		font-family: $pnb
 		line-height: 24px
 		background: url('../img/instagram_icon.png')
 		background-repeat: no-repeat
 		padding-left: 38px
 		margin-bottom: 21px
 	h3
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		line-height: 19px
 	h4
 		position: absolute
 		left: 0px
 		bottom: 23px
-		font-family: ProximaNova-Bold, Arial
+		font-family: $pnb
 		line-height: 17px
 //End .instagram_feed
 .video_follow_catalogue
 	padding-top: 66px
 	padding-bottom: 96px
 	h2
-		font-family: ProximaNova-SemiBold, Arial
+		font-family: $pnsb
 		font-size: 36px
 		line-height: 44px
 		color: $bl
@@ -713,7 +724,7 @@ header
 		a
 			position: relative
 			display: inline-block
-			font-family: ProximaNova-Regular, Arial
+			font-family: $pnr
 			font-size: 24px
 			line-height: 29px
 			color: $bl
@@ -760,7 +771,7 @@ header
 		a
 			position: relative
 			display: inline-block
-			font-family: ProximaNova-SemiBold, Arial
+			font-family: $pnsb
 			font-size: 24px
 			line-height: 29px
 			color: $bl
@@ -790,7 +801,7 @@ footer
 		padding-bottom: 46px
 		a,
 		h2
-			font-family: ProximaNova-Regular, Arial
+			font-family: $pnr
 			font-size: 18px
 			line-height: 24px
 		a
@@ -817,7 +828,7 @@ footer
 				margin-top: 24px
 				margin-bottom: 24px
 			.email
-				font-family: ProximaNova-SemiBold, Arial
+				font-family: $pnsb
 		.soc_networks
 			float: right
 			margin-top: 6px
@@ -865,7 +876,7 @@ footer
 			span,
 			li::after,
 			a
-				font-family: ProximaNova-Bold, Arial
+				font-family: $pnb
 				font-size: 18px
 				line-height: 24px
 			h2
@@ -914,6 +925,8 @@ footer
 	left: 0px
 	width: 100%
 	height: 100%
+	background: rgba(255, 255, 1, .95)
+	// padding-top: 240px
 	z-index: 3
 	transition: all .7s ease-in-out
 	-webkit-transition: all .7s ease-in-out
@@ -921,6 +934,22 @@ footer
 	-o-transition: all .7s ease-in-out
 	&.show
 		top: 0px
+	.get_quote_form
+		position: relative
+		background: #fff
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 0px
+			width: 40px
+			height: 100%
+			display: inline-block
+			background: #f00
+		&::before
+			right: 100%
+		&::after
+			left: 100%
 	.progress-bar
 		height: 5px
 		width: 100%
@@ -929,4 +958,82 @@ footer
 			height: 100%
 			width: 33.3333%
 			background: #ff0300
+			transition: all .7s linear
+			-webkit-transition: all .7s linear
+			-moz-transition: all .7s linear
+			-o-transition: all .7s linear
+	.online_quote
+		width: 50%
+		padding-right: 20px
+		h2
+			font-family: $pnb
+			font-size: 24px
+			line-height: 29px
+			color: $bl
+		a
+			display: inline-block
+		.info
+			float: left
+			.img
+				float: left
+			img
+				display: inline-block
+				width: 96px
+				height: 71px
+			.text_box
+				padding-top: 15px
+				margin-left: 19px
+				float: left
+				a:hover h3
+					color: $ye
+			h3,
+			h4
+				color: $bl
+			h3
+				font-family: $pnsb
+				font-size: 18px
+				line-height: 22px
+			h4
+				font-family: $pnr
+				font-size: 14px
+				line-height: 17px
+				margin-top: 3px
+				span
+					font-family: $pnsb
+		.right_section
+			float: right
+			label
+				position: relative
+				font-family: $pnsb
+				font-size: 18px
+				font-weight: normal
+				line-height: 22px
+				color: $bl
+				margin: 0px
+			select
+				position: relative
+				font-family: $pnr
+				font-size: 18px
+				line-height: 22px
+				color: $bl
+				border: 3px solid $bl
+				padding: 8px 53px 9px 9px
+				margin-left: 11px
+				// &::after
+				// 	content: ''
+				// 	position: absolute
+				// 	top: 0px
+				// 	right: 0px
+				// 	display: inline-block
+				// 	width: 17px
+				// 	height: 10px
+				// 	background: url('../img/select_arrow_bars.png')
+				span
+					position: absolute
+					top: 0px
+					right: 0px
+					display: inline-block
+					width: 17px
+					height: 10px
+					background: url('../img/select_arrow_bars.png')
 //End .online_quote_popup
