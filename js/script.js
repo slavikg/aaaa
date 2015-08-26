@@ -18,7 +18,10 @@ $(document).ready(function() {
 	$('header .online_quote a').on('click', function() {
 		$('.online_quote_popup').addClass('show');
 	});
-	$('.online_quote_popup').slick({
+	$('.online_quote_popup .close-form').click(function(){
+		$('.online_quote_popup').removeClass('show');
+	});
+	$('.online_quote_popup .steps').slick({
 		arrows: false,
 		dots: false,
 		touchMove: false,
@@ -31,6 +34,68 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+	$('.online_quote_popup .next-step').on('click', function(){
+		if ($(this).hasClass('next-step-2')) {
+			// if(checkEmpty('#quote-name')) {
+				$('.online_quote_popup .progress-bar-status').css('width', '66.6666%');
+				$('.online_quote_popup .steps').slick('slickNext');
+				$('.online_quote_popup .current-step').html($(this).parent().data('slick-index') + 2);
+				// $('.error-msg').text('');
+			// } else {
+			// 	$('.error-msg').text('Please fill the field before continuing');
+			// }
+		} else if ($(this).hasClass('next-step-3')) {
+
+			// if(checkEmpty('#quote-email')) {
+			// 	if(validateEmail('#quote-email')) {
+					$('.online_quote_popup .progress-bar-status').css('width', '100%');
+					$('.online_quote_popup .steps').slick('slickNext');
+					$('.online_quote_popup .current-step').html($(this).parent().data('slick-index') + 2);
+				// 	$('.error-msg').text('');
+				// } else {
+				// 	$('.error-msg').text('Please enter correct email before continuing');
+				// }
+
+			// } else {
+			// 	$('.error-msg').text('Please fill the field before continuing');
+			// }
+
+		} else if ($(this).hasClass('next-step-4')) {
+			// if(checkEmpty('#quote-phone')) {
+				// $('.progress-bar-status').css('width', '100%');
+				$('.online_quote_popup .steps').slick('slickNext');
+				// $('.current-step').html($(this).parent().data('slick-index') + 2);
+			// 	$('.error-msg').text('');
+			// } else {
+			// 	$('.error-msg').text('Please fill the field before continuing');
+			// }
+
+		} else {
+			// if(checkEmpty('#quote-brief')) {
+				$.ajax({
+					url: ajaxurl,
+					method: 'POST',
+					data: $('.online_quote_popup #get-quote-form').serialize(),
+					success: function(data){
+						//$('.progress-bar-status').css('width', '100%');
+						$('.online_quote_popup .steps').slick('slickNext');
+						setTimeout(function(){
+							$('.online_quote_popup .progress-bar').fadeOut();
+							$('.online_quote_popup .status-bar').fadeOut();
+						}, 100);
+					},
+					error: function(error){}
+				});
+				// $('.error-msg').text('');
+			// }// else {
+			// 	$('.error-msg').text('Please fill the field before continuing');
+			// }
+
+		}
+	});
+
+
 	// Column2Height($('.header_nav_and_slider .logo_and_nav'),
 	// 	$('.header_nav_and_slider .slider_top'));
 	// $(window).resize(Column2Height($('.header_nav_and_slider .logo_and_nav'),

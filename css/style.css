@@ -1117,3 +1117,13 @@ footer .copyright .logo img:hover {
 .online_quote_popup.show {
   top: 0px;
 }
+.online_quote_popup .progress-bar {
+  height: 5px;
+  width: 100%;
+  background: #6d6d6d;
+}
+.online_quote_popup .progress-bar .progress-bar-status {
+  height: 100%;
+  width: 33.3333%;
+  background: #ff0300;
+}
