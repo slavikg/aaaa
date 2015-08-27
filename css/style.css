@@ -1122,6 +1122,7 @@ footer .copyright .logo img:hover {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 1, 0.95);
+  padding-top: 240px;
   z-index: 3;
   transition: all 0.7s ease-in-out;
   -webkit-transition: all 0.7s ease-in-out;
@@ -1134,6 +1135,8 @@ footer .copyright .logo img:hover {
 .online_quote_popup .get_quote_form {
   position: relative;
   background: white;
+  padding-top: 55px;
+  padding-bottom: 39px;
 }
 .online_quote_popup .get_quote_form::before, .online_quote_popup .get_quote_form::after {
   content: "";
@@ -1142,7 +1145,7 @@ footer .copyright .logo img:hover {
   width: 40px;
   height: 100%;
   display: inline-block;
-  background: red;
+  background: lime;
 }
 .online_quote_popup .get_quote_form::before {
   right: 100%;
@@ -1150,15 +1153,78 @@ footer .copyright .logo img:hover {
 .online_quote_popup .get_quote_form::after {
   left: 100%;
 }
+.online_quote_popup .close-form {
+  position: absolute;
+  top: 41px;
+  right: 0px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/online_quote_close_form.png");
+  cursor: pointer;
+}
+.online_quote_popup .close-form:hover {
+  background-position: top right;
+}
+.online_quote_popup .next-step {
+  position: relative;
+  display: inline-block;
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 24px;
+  line-height: 29px;
+  color: blue;
+  background: #ffff01;
+  cursor: pointer;
+  padding: 23px 160px 19px 28px;
+  margin-top: 36px;
+  float: right;
+  transition: padding 0.25s linear;
+  -webkit-transition: padding 0.25s linear;
+  -moz-transition: padding 0.25s linear;
+  -o-transition: padding 0.25s linear;
+}
+.online_quote_popup .next-step::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 25px;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background: url("../img/online_quote_arrow_bar.png");
+}
+.online_quote_popup .next-step:hover {
+  color: white;
+  padding-left: 40px;
+  padding-right: 148px;
+}
+.online_quote_popup .next-step:hover::after {
+  background-position: top right;
+}
+.online_quote_popup .status-bar {
+  position: absolute;
+  bottom: 34px;
+  left: 0px;
+}
+.online_quote_popup .status-bar .step-count {
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  color: blue;
+  word-wrap: pre;
+}
 .online_quote_popup .progress-bar {
-  height: 5px;
-  width: 100%;
-  background: #6d6d6d;
+  position: absolute;
+  left: -40px;
+  right: -40px;
+  bottom: 0px;
+  height: 3px;
+  background: none;
+  float: none;
 }
 .online_quote_popup .progress-bar .progress-bar-status {
   height: 100%;
   width: 33.3333%;
-  background: #ff0300;
+  background: blue;
   transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   -moz-transition: all 0.7s linear;
@@ -1167,15 +1233,29 @@ footer .copyright .logo img:hover {
 .online_quote_popup .online_quote {
   width: 50%;
   padding-right: 20px;
+  float: left;
 }
 .online_quote_popup .online_quote h2 {
   font-family: ProximaNova-Bold, Arial;
   font-size: 24px;
   line-height: 29px;
   color: blue;
+  margin-bottom: 23px;
 }
 .online_quote_popup .online_quote a {
   display: inline-block;
+}
+.online_quote_popup .online_quote li {
+  border-top: 2px solid #d7d7d7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+}
+.online_quote_popup .online_quote li:last-child {
+  border-bottom: 2px solid #d7d7d7;
 }
 .online_quote_popup .online_quote .info {
   float: left;
@@ -1215,9 +1295,11 @@ footer .copyright .logo img:hover {
   font-family: ProximaNova-SemiBold, Arial;
 }
 .online_quote_popup .online_quote .right_section {
+  margin-top: 14px;
   float: right;
 }
 .online_quote_popup .online_quote .right_section label {
+  display: inline-block;
   position: relative;
   font-family: ProximaNova-SemiBold, Arial;
   font-size: 18px;
@@ -1225,23 +1307,141 @@ footer .copyright .logo img:hover {
   line-height: 22px;
   color: blue;
   margin: 0px;
+  float: left;
 }
 .online_quote_popup .online_quote .right_section select {
-  position: relative;
   font-family: ProximaNova-Regular, Arial;
   font-size: 18px;
   line-height: 22px;
   color: blue;
   border: 3px solid blue;
-  padding: 8px 53px 9px 9px;
+  background: url("../img/select_arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding: 0px 46px 2px 9px;
   margin-left: 11px;
+  outline: 0;
+  /*for WebKit */
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
 }
-.online_quote_popup .online_quote .right_section select span {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.online_quote_popup .online_quote .right_section select:focus {
+  color: white;
+  background-color: blue;
+  background-image: url("../img/select_arrow_focus.png");
+}
+.online_quote_popup .online_quote .right_section select option {
+  color: white;
+  background: blue;
+  padding: 7.5px 0px 7.5px 15px;
+}
+.online_quote_popup .online_quote .right_section select option:hover, .online_quote_popup .online_quote .right_section select option:focus {
+  color: #ffff01;
+  background: blue;
+}
+.online_quote_popup .online_quote .right_section .delete {
   display: inline-block;
-  width: 17px;
-  height: 10px;
-  background: url("../img/select_arrow_bars.png");
+  width: 45px;
+  height: 44px;
+  border: 3px solid blue;
+  background: url("../img/online_quote_item_delete.png");
+  cursor: pointer;
+  float: left;
+  margin-left: 21px;
+}
+.online_quote_popup .online_quote .right_section .delete:hover {
+  background-color: blue;
+  background-position: top right;
+}
+.online_quote_popup .event_type {
+  width: 50%;
+  padding-left: 20px;
+  float: left;
+}
+.online_quote_popup .event_type h2 {
+  font-family: ProximaNova-Bold, Arial;
+  font-size: 24px;
+  line-height: 29px;
+  color: blue;
+  margin-bottom: 23px;
+}
+.online_quote_popup .event_type li {
+  padding-top: 25px;
+  padding-bottom: 23px;
+  border-top: 2px solid #d7d7d7;
+}
+.online_quote_popup .event_type li:last-child {
+  border-bottom: 2px solid #d7d7d7;
+}
+.online_quote_popup .event_type .info {
+  float: left;
+}
+.online_quote_popup .event_type .info h3,
+.online_quote_popup .event_type .info h4 {
+  color: blue;
+}
+.online_quote_popup .event_type .info h3 {
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.online_quote_popup .event_type .info h4 {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 14px;
+  line-height: 21px;
+}
+.online_quote_popup .event_type .input_box {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+  margin-top: 6px;
+  float: right;
+}
+.online_quote_popup .event_type input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+}
+.online_quote_popup .event_type label {
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+  padding-left: 45px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.online_quote_popup .event_type label::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45px;
+  height: 44px;
+  margin-top: -7px;
+  border: 3px solid blue;
+  z-index: 5;
+  content: "";
+}
+.online_quote_popup .event_type input[checked="checked"] + label::before {
+  background-color: blue;
+  background-image: url("../img/input_checkbox_arrow.png");
 }

@@ -15,6 +15,19 @@ $(document).ready(function() {
 	//Add Dash for reviews and change button text
 	ChangeReviewsLayout();
 
+	$('.online_quote_popup .online_quote .delete').click(function(){
+		// console.log('Click');
+		// console.log($(this).parent('li'));
+		// $(this).parent('li').addClass('delete');
+		$(this).parents('li').remove();
+		// $('li').parent($(this)).addClass('delete');
+	});
+
+	$('.online_quote_popup .event_type input').click(function(){
+		$('.online_quote_popup .event_type input').attr('checked', false);
+		$(this).attr('checked', true);
+	});
+
 	$('header .online_quote a').on('click', function() {
 		$('.online_quote_popup').addClass('show');
 	});
@@ -34,7 +47,11 @@ $(document).ready(function() {
 			});
 		}
 	});
-
+	function OnlineQuotePopup_ProgressBar_Width() {
+		$('.online_quote_popup .progress-bar').width($('.online_quote_popup .get_quote_form').width() + 80);
+	}
+	OnlineQuotePopup_ProgressBar_Width();
+	$(window).resize(OnlineQuotePopup_ProgressBar_Width);
 	$('.online_quote_popup .next-step').on('click', function(){
 		if ($(this).hasClass('next-step-2')) {
 			// if(checkEmpty('#quote-name')) {

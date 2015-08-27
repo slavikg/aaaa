@@ -926,7 +926,7 @@ footer
 	width: 100%
 	height: 100%
 	background: rgba(255, 255, 1, .95)
-	// padding-top: 240px
+	padding-top: 240px
 	z-index: 3
 	transition: all .7s ease-in-out
 	-webkit-transition: all .7s ease-in-out
@@ -937,6 +937,8 @@ footer
 	.get_quote_form
 		position: relative
 		background: #fff
+		padding-top: 55px
+		padding-bottom: 39px
 		&::before,
 		&::after
 			content: ''
@@ -945,19 +947,77 @@ footer
 			width: 40px
 			height: 100%
 			display: inline-block
-			background: #f00
+			background: #0f0
 		&::before
 			right: 100%
 		&::after
 			left: 100%
+	.close-form
+		position: absolute
+		top: 41px
+		right: 0px
+		width: 17px
+		height: 17px
+		background: url('../img/online_quote_close_form.png')
+		cursor: pointer
+		&:hover
+			background-position: top right
+	.next-step
+		position: relative
+		display: inline-block
+		font-family: $pnsb
+		font-size: 24px
+		line-height: 29px
+		color: $bl
+		background: $ye
+		cursor: pointer
+		padding: 23px 160px 19px 28px
+		margin-top: 36px
+		float: right
+		transition: padding .25s linear
+		-webkit-transition: padding .25s linear
+		-moz-transition: padding .25s linear
+		-o-transition: padding .25s linear
+		&::after
+			content: ''
+			position: absolute
+			top: 14px
+			right: 25px
+			display: inline-block
+			width: 43px
+			height: 43px
+			background: url('../img/online_quote_arrow_bar.png')
+		&:hover
+			color: #fff
+			padding-left: 40px
+			padding-right: 148px
+			&::after
+				background-position: top right
+	.status-bar
+		position: absolute
+		bottom: 34px
+		left: 0px
+		.step-count
+			font-family: $pnsb
+			font-size: 18px
+			line-height: 22px
+			color: $bl
+			word-wrap: pre
 	.progress-bar
-		height: 5px
-		width: 100%
-		background: #6d6d6d
+		position: absolute
+		left: -40px
+		right: -40px
+		bottom: 0px
+		height: 3px
+		// width: 100%
+		background: none
+		float: none
+		// margin-left: -20px
+		// margin-right: -20px
 		.progress-bar-status
 			height: 100%
 			width: 33.3333%
-			background: #ff0300
+			background: $bl
 			transition: all .7s linear
 			-webkit-transition: all .7s linear
 			-moz-transition: all .7s linear
@@ -965,13 +1025,25 @@ footer
 	.online_quote
 		width: 50%
 		padding-right: 20px
+		float: left
 		h2
 			font-family: $pnb
 			font-size: 24px
 			line-height: 29px
 			color: $bl
+			margin-bottom: 23px
 		a
 			display: inline-block
+		li
+			border-top: 2px solid #d7d7d7
+			padding-top: 10px
+			padding-bottom: 10px
+			transition: all .25s linear
+			-webkit-transition: all .25s linear
+			-moz-transition: all .25s linear
+			-o-transition: all .25s linear
+			&:last-child
+				border-bottom: 2px solid #d7d7d7
 		.info
 			float: left
 			.img
@@ -1001,8 +1073,10 @@ footer
 				span
 					font-family: $pnsb
 		.right_section
+			margin-top: 14px
 			float: right
 			label
+				display: inline-block
 				position: relative
 				font-family: $pnsb
 				font-size: 18px
@@ -1010,30 +1084,158 @@ footer
 				line-height: 22px
 				color: $bl
 				margin: 0px
+				float: left
 			select
-				position: relative
 				font-family: $pnr
 				font-size: 18px
 				line-height: 22px
 				color: $bl
 				border: 3px solid $bl
-				padding: 8px 53px 9px 9px
+				background: url('../img/select_arrow.png')
+				background-repeat: no-repeat
+				background-position: right 14px center
+				padding: 0px 46px 2px 9px
 				margin-left: 11px
-				// &::after
-				// 	content: ''
-				// 	position: absolute
-				// 	top: 0px
-				// 	right: 0px
-				// 	display: inline-block
-				// 	width: 17px
-				// 	height: 10px
-				// 	background: url('../img/select_arrow_bars.png')
-				span
-					position: absolute
-					top: 0px
-					right: 0px
-					display: inline-block
-					width: 17px
-					height: 10px
-					background: url('../img/select_arrow_bars.png')
+				outline: 0
+				/*for WebKit*/
+				-webkit-appearance: none
+				/* for FF */
+				-moz-appearance: none
+				text-indent: 0.01px
+				text-overflow: ''
+				/* for IE */
+				-ms-appearance: none
+				appearance: none !important
+				&:focus
+					color: #fff
+					background-color: $bl
+					background-image: url('../img/select_arrow_focus.png')
+				option
+					color: #fff
+					background: $bl
+					padding: 7.5px 0px 7.5px 15px
+					&:hover,
+					&:focus
+						color: $ye
+						background: $bl
+			.delete
+				display: inline-block
+				width: 45px
+				height: 44px
+				border: 3px solid $bl
+				background: url('../img/online_quote_item_delete.png')
+				cursor: pointer
+				float: left
+				margin-left: 21px
+				&:hover
+					background-color: $bl
+					background-position: top right
+	//End .online_quote
+	.event_type
+		width: 50%
+		padding-left: 20px
+		float: left
+		h2
+			font-family: $pnb
+			font-size: 24px
+			line-height: 29px
+			color: $bl
+			margin-bottom: 23px
+		li
+			padding-top: 25px
+			padding-bottom: 23px
+			border-top: 2px solid #d7d7d7
+			&:last-child
+				border-bottom: 2px solid #d7d7d7
+		.info
+			float: left
+			h3,
+			h4
+				color: $bl
+			h3
+				font-family: $pnsb
+				font-size: 18px
+				line-height: 22px
+				text-transform: uppercase
+			h4
+				font-family: $pnr
+				font-size: 14px
+				line-height: 21px
+		.input_box
+			display: inline-block
+			*display: inline /* inline-block ie7 fix */
+			*zoom: 1
+			vertical-align: top
+			position: relative
+			cursor: pointer
+			margin-top: 6px
+			float: right
+		input
+			width: 14px
+			height: 14px
+			margin: 0
+			padding: 0
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -7px
+			cursor: pointer
+			z-index: 10
+			opacity: 0
+		label
+			font-size: 14px
+			line-height: 22px
+			display: block
+			padding-left: 45px
+			position: relative
+			z-index: 1
+			cursor: pointer
+			&::before
+				display: block
+				position: absolute
+				left: 0
+				top: 50%
+				width: 45px
+				height: 44px
+				margin-top: -7px
+				// background: rgba(0, 0, 0, 0) url(../images/checkbox.gif) no-repeat
+				border: 3px solid $bl
+				z-index: 5
+				content: ''
+		input[checked="checked"] + label::before
+			background-color: $bl
+			background-image: url('../img/input_checkbox_arrow.png')
+		// input
+		// 	// width: 45px
+		// 	// height: 44px
+		// 	// border: 3px solid $bl
+		// 	// float: right
+		// 	display: none
+		// label
+		// 	display: inline-block
+		// 	cursor: pointer
+		// 	position: relative
+		// 	// padding-left: 25px
+		// 	margin-right: 45px
+		// 	// font-size: 13px
+		// label::before
+		// 	content: ''
+		// 	display: inline-block
+		// 	width: 45px
+		// 	height: 44px
+		// 	margin-right: 10px
+		// 	position: absolute
+		// 	left: 0
+		// 	bottom: 0px
+		// 	border: 3px solid $bl
+		// 	// box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8)
+		// input:checked+label::before
+		// 	content: '\2713'
+		// 	background: $bl
+		// 	// text-shadow: 1px 1px 1px rgba(0, 0, 0, .2)
+		// 	// font-size: 15px
+		// 	// color: #f3f3f3
+		// 	// text-align: center
+		// 	// line-height: 15px
+	//End .event_type
 //End .online_quote_popup
