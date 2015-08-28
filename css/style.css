@@ -1230,17 +1230,17 @@ footer .copyright .logo img:hover {
   -moz-transition: all 0.7s linear;
   -o-transition: all 0.7s linear;
 }
-.online_quote_popup .online_quote {
-  width: 50%;
-  padding-right: 20px;
-  float: left;
-}
-.online_quote_popup .online_quote h2 {
+.online_quote_popup h2 {
   font-family: ProximaNova-Bold, Arial;
   font-size: 24px;
   line-height: 29px;
   color: blue;
   margin-bottom: 23px;
+}
+.online_quote_popup .online_quote {
+  width: 50%;
+  padding-right: 20px;
+  float: left;
 }
 .online_quote_popup .online_quote a {
   display: inline-block;
@@ -1364,13 +1364,6 @@ footer .copyright .logo img:hover {
   padding-left: 20px;
   float: left;
 }
-.online_quote_popup .event_type h2 {
-  font-family: ProximaNova-Bold, Arial;
-  font-size: 24px;
-  line-height: 29px;
-  color: blue;
-  margin-bottom: 23px;
-}
 .online_quote_popup .event_type li {
   padding-top: 25px;
   padding-bottom: 23px;
@@ -1442,6 +1435,164 @@ footer .copyright .logo img:hover {
   content: "";
 }
 .online_quote_popup .event_type input[checked="checked"] + label::before {
+  background-color: blue;
+  background-image: url("../img/input_checkbox_arrow.png");
+}
+.online_quote_popup .contact_details {
+  width: 66.6666%;
+  padding-right: 12px;
+  float: left;
+}
+.online_quote_popup .contact_details .first_section,
+.online_quote_popup .contact_details .second_section {
+  width: 50%;
+  float: left;
+}
+.online_quote_popup .contact_details .first_section::before,
+.online_quote_popup .contact_details .second_section::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #d7d7d7;
+}
+.online_quote_popup .contact_details .first_section {
+  padding-right: 20px;
+}
+.online_quote_popup .contact_details .second_section {
+  padding-left: 19px;
+}
+.online_quote_popup .contact_details label {
+  display: block;
+  font-family: ProximaNova-SemiBold, Arial;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: blue;
+  margin-top: 23px;
+}
+.online_quote_popup .contact_details input {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  color: blue;
+  border: 3px solid #d7d7d7;
+  width: 100%;
+  padding: 8px 15px;
+}
+.online_quote_popup .contact_details input:focus {
+  border-color: blue;
+}
+.online_quote_popup .contact_details select {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  color: #d7d7d7;
+  width: 100%;
+  border: 3px solid #d7d7d7;
+  background: url("../img/select_arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding: 0px 46px 2px 8px;
+  outline: 0;
+  /*for WebKit */
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+}
+.online_quote_popup .contact_details select:focus {
+  color: white;
+  border-color: blue;
+  background-color: blue;
+  background-image: url("../img/select_arrow_focus.png");
+}
+.online_quote_popup .contact_details select option {
+  color: white;
+  background: blue;
+  padding: 7.5px 0px 7.5px 15px;
+}
+.online_quote_popup .contact_details select option:hover, .online_quote_popup .contact_details select option:focus {
+  color: #ffff01;
+  background: blue;
+}
+.online_quote_popup .requirements {
+  width: 33.3333%;
+  padding-left: 25px;
+  float: left;
+}
+.online_quote_popup .requirements li {
+  padding-top: 25px;
+  padding-bottom: 24px;
+  border-top: 2px solid #d7d7d7;
+}
+.online_quote_popup .requirements li:last-child {
+  border-bottom: 2px solid #d7d7d7;
+}
+.online_quote_popup .requirements .info {
+  float: left;
+}
+.online_quote_popup .requirements .info h3,
+.online_quote_popup .requirements .info h4 {
+  color: blue;
+}
+.online_quote_popup .requirements .info h3 {
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 18px;
+  line-height: 22px;
+}
+.online_quote_popup .requirements .info h4 {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 14px;
+  line-height: 21px;
+}
+.online_quote_popup .requirements .input_box {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+  margin-top: 6px;
+  float: right;
+}
+.online_quote_popup .requirements input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+}
+.online_quote_popup .requirements label {
+  font-size: 14px;
+  line-height: 22px;
+  display: block;
+  padding-left: 45px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.online_quote_popup .requirements label::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45px;
+  height: 44px;
+  margin-top: -7px;
+  border: 3px solid blue;
+  z-index: 5;
+  content: "";
+}
+.online_quote_popup .requirements input:checked + label::before {
   background-color: blue;
   background-image: url("../img/input_checkbox_arrow.png");
 }
