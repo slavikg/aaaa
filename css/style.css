@@ -1481,6 +1481,10 @@ footer .copyright .logo img:hover {
 .online_quote_popup .contact_details input:focus {
   border-color: blue;
 }
+.online_quote_popup .contact_details input:invalid {
+  border-color: red;
+  outline: none;
+}
 .online_quote_popup .contact_details select {
   font-family: ProximaNova-Regular, Arial;
   font-size: 18px;
@@ -1595,4 +1599,88 @@ footer .copyright .logo img:hover {
 .online_quote_popup .requirements input:checked + label::before {
   background-color: blue;
   background-image: url("../img/input_checkbox_arrow.png");
+}
+.online_quote_popup .event_details {
+  width: 66.6666%;
+  padding-right: 12px;
+  float: left;
+}
+.online_quote_popup .event_details .first_section,
+.online_quote_popup .event_details .second_section {
+  width: 50%;
+  float: left;
+}
+.online_quote_popup .event_details .first_section::before,
+.online_quote_popup .event_details .second_section::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #d7d7d7;
+}
+.online_quote_popup .event_details .first_section {
+  padding-right: 20px;
+}
+.online_quote_popup .event_details .second_section {
+  padding-left: 19px;
+}
+.online_quote_popup .event_details label {
+  display: block;
+  font-family: ProximaNova-SemiBold, Arial;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: blue;
+  margin-top: 23px;
+}
+.online_quote_popup .event_details input {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  color: blue;
+  border: 3px solid #d7d7d7;
+  width: 100%;
+  padding: 8px 15px;
+}
+.online_quote_popup .event_details input:focus {
+  border-color: blue;
+}
+.online_quote_popup .event_details input:invalid {
+  border-color: red;
+  outline: none;
+}
+.online_quote_popup .event_details select {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  color: #d7d7d7;
+  width: 100%;
+  border: 3px solid #d7d7d7;
+  background: url("../img/select_arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding: 0px 46px 2px 8px;
+  outline: 0;
+  /*for WebKit */
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+}
+.online_quote_popup .event_details select:focus {
+  color: white;
+  border-color: blue;
+  background-color: blue;
+  background-image: url("../img/select_arrow_focus.png");
+}
+.online_quote_popup .event_details select option {
+  color: white;
+  background: blue;
+  padding: 7.5px 0px 7.5px 15px;
+}
+.online_quote_popup .event_details select option:hover, .online_quote_popup .event_details select option:focus {
+  color: #ffff01;
+  background: blue;
 }

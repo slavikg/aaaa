@@ -1284,6 +1284,9 @@ footer
 			padding: 8px 15px
 			&:focus
 				border-color: $bl
+			&:invalid
+				border-color: #f00
+				outline: none
 		select
 			font-family: $pnr
 			font-size: 18px
@@ -1390,4 +1393,82 @@ footer
 			background-color: $bl
 			background-image: url('../img/input_checkbox_arrow.png')
 	//End .requirements
+	.event_details
+		width: 66.6666%
+		padding-right: 12px
+		float: left
+		// h2
+		// 	font-family: $pnb
+		// 	font-size: 24px
+		// 	line-height: 29px
+		// 	color: $bl
+		// 	margin-bottom: 23px
+		.first_section,
+		.second_section
+			width: 50%
+			float: left
+			&::before
+				content: ''
+				display: block
+				border-top: 2px solid #d7d7d7
+		.first_section
+			padding-right: 20px
+		.second_section
+			padding-left: 19px
+		label
+			display: block
+			font-family: $pnsb
+			font-weight: normal
+			font-size: 18px
+			line-height: 22px
+			color: $bl
+			margin-top: 23px
+		input
+			font-family: $pnr
+			font-size: 18px
+			line-height: 22px
+			color: $bl
+			border: 3px solid #d7d7d7
+			width: 100%
+			padding: 8px 15px
+			&:focus
+				border-color: $bl
+			&:invalid
+				border-color: #f00
+				outline: none
+		select
+			font-family: $pnr
+			font-size: 18px
+			line-height: 22px
+			color: #d7d7d7
+			width: 100%
+			border: 3px solid #d7d7d7
+			background: url('../img/select_arrow.png')
+			background-repeat: no-repeat
+			background-position: right 14px center
+			padding: 0px 46px 2px 8px
+			outline: 0
+			/*for WebKit*/
+			-webkit-appearance: none
+			/* for FF */
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			/* for IE */
+			-ms-appearance: none
+			appearance: none !important
+			&:focus
+				color: #fff
+				border-color: $bl
+				background-color: $bl
+				background-image: url('../img/select_arrow_focus.png')
+			option
+				color: #fff
+				background: $bl
+				padding: 7.5px 0px 7.5px 15px
+				&:hover,
+				&:focus
+					color: $ye
+					background: $bl
+	//End .event_details
 //End .online_quote_popup

@@ -1062,9 +1062,9 @@
 									<div class="second_section">
 										<label for="contact_datails_state">State</label>
 										<select name="" id="contact_datails_state">
-											<option value="NSW" selected="">NSW</option>
-											<option value="NSW" selected="">NSW</option>
-											<option value="NSW" selected="">NSW</option>
+											<option value="NSW" selected>NSW</option>
+											<option value="NSW">NSW</option>
+											<option value="NSW">NSW</option>
 										</select>
 										<label for="contact_datails_phone">Phone</label>
 										<input type="text" id="contact_datails_phone">
@@ -1072,9 +1072,9 @@
 										<input type="email" id="contact_datails_email">
 										<label for="contact_datails_prefered_contact_method">Prefered Contact Method</label>
 										<select name="" id="contact_datails_prefered_contact_method">
-											<option value="Phone" selected="">Phone</option>
-											<option value="Email" selected="">Email</option>
-											<option value="phone" selected="">phone</option>
+											<option value="Phone" selected>Phone</option>
+											<option value="Email">Email</option>
+											<option value="phone">phone</option>
 										</select>
 									</div>
 								</div>
@@ -1116,8 +1116,55 @@
 								<span class="next-step next-step-3">Continue</span>
 							</div>
 							<div class="step step-3">
-								<div class="yellow" style="background: #00f; height: 100px; width: 500px; margin: 0px auto;">
+								<div class="clearfix event_details">
+									<h2>Event Details</h2>
+									<div class="first_section">
+										<label for="event_details_number_guests">Number of Guests</label>
+										<select name="" id="event_details_number_guests">
+											<option selected value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+										<label for="">Hours of orperation</label>
+										<select name="" id="event_details_hours_operation_from" autocomplete="off" class="two_inputs">
+											<option value="" disabled="" selected="" style="display: none;">From</option>
+											<option value="1:00pm">1:00pm</option>
+											<option value="2:00pm">2:00pm</option>
+											<option value="3:00pm">3:00pm</option>
+											<option value="4:00pm">4:00pm</option>
+										</select>
+										<select name="" id="event_details_hours_operation_to" autocomplete="off" class="two_inputs">
+											<option value="" disabled="" selected="" style="display: none;">To</option>
+											<option value="1:00pm">1:00pm</option>
+											<option value="2:00pm">2:00pm</option>
+											<option value="3:00pm">3:00pm</option>
+											<option value="4:00pm">4:00pm</option>
+										</select>
+										<label for="">Date of function</label>
+										<input type="text" id="event_details_date_function_from" class="two_inputs">
+										<input type="text" id="event_details_date_function_to" class="two_inputs">
+										<label for="event_details_purpose_event">Purpose of Event</label>
+										<input type="text" id="event_details_purpose_event">
+									</div>
+									<div class="second_section">
+										<label for="event_details_venue_address">Venue Address</label>
+										<input type="text" id="event_details_venue_address">
+										<label for="event_details_venue_suburb">Venue Suburb</label>
+										<input type="text" id="event_details_venue_suburb">
+										<label for="event_details_state">State</label>
+										<select name="" id="event_details_state">
+											<option selected value="NSW">NSW</option>
+											<option value="NSW">NSW</option>
+											<option value="NSW">NSW</option>
+										</select>
+										<div class="address_same_address">
+											<h4>Click here if venue address is same as personal address</h4>
+											<div class="input_box"><input type="checkbox" id="get_quote_form_requirements_1" name="requirements_1"><label for="get_quote_form_requirements_1"></label></div>
+										</div>
+									</div>
 								</div>
+								<!-- .clearfix.event_details>h2{Event Details}+.first_section>label[for="event_details_number_guests"]{Number of Guests}+select#event_details_number_guests>option[value="$"]{$}*4^label[for=""]{Hours of orperation}+select#event_details_hours_operation_from.two_inputs[autocomplete="off"]>option[value="" disabled selected style="display: none;"]{From}+option[value="$:00pm"]{$:00pm}*4^select#event_details_hours_operation_to.two_inputs[autocomplete="off"]>option[value="" disabled selected style="display: none;"]{To}+option[value="$:00pm"]{$:00pm}*4^label[for=""]{Date of function}+input#event_details_date_function_from.two_inputs+input#event_details_date_function_to.two_inputs+label[for="event_details_purpose_event"]{Purpose of Event}+input#event_details_purpose_event^.second_section>label[for="event_details_venue_address"]{Venue Address}+input#event_details_venue_address+label[for="event_details_venue_suburb"]{Venue Suburb}+input#event_details_venue_suburb+label[for="event_details_state"]{State}+select#event_details_state>option[value="NSW"]{NSW}+option[value="NSW"]{NSW}+option[value="NSW"]{NSW}^.address_same_address>h4{Click here if venue address is same as personal address}+.input_box>input#get_quote_form_requirements_$[type="checkbox" name="requirements_$"]+label[for="get_quote_form_requirements_$"] -->
 								<span class="next-step next-step-4">Continue</span>
 							</div>
 							<div class="step step-4">
