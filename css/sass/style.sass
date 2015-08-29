@@ -1423,6 +1423,7 @@ footer
 			line-height: 22px
 			color: $bl
 			margin-top: 23px
+			clear: both
 		input
 			font-family: $pnr
 			font-size: 18px
@@ -1446,7 +1447,7 @@ footer
 			background: url('../img/select_arrow.png')
 			background-repeat: no-repeat
 			background-position: right 14px center
-			padding: 0px 46px 2px 8px
+			padding: 1px 46px 1px 10px
 			outline: 0
 			/*for WebKit*/
 			-webkit-appearance: none
@@ -1470,5 +1471,66 @@ footer
 				&:focus
 					color: $ye
 					background: $bl
+		.two_inputs
+			width: 46.9%
+			float: left
+			margin-right: 10px
+			margin-bottom: 23px
+		.two_inputs + .two_inputs
+			margin-right: 0px
+			margin-left: 10px
+		.address_same_address
+			h4
+				display: inline-block
+				font-family: $pnsb
+				font-size: 18px
+				line-height: 22px
+				color: $bl
+				width: 72%
+		.input_box
+			display: inline-block
+			*display: inline /* inline-block ie7 fix */
+			*zoom: 1
+			vertical-align: top
+			position: relative
+			cursor: pointer
+			margin-top: 6px
+			float: right
+			input
+				width: 14px
+				height: 14px
+				margin: 0
+				padding: 0
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -7px
+				cursor: pointer
+				z-index: 10
+				opacity: 0
+			label
+				font-size: 14px
+				line-height: 22px
+				display: block
+				padding-left: 45px
+				position: relative
+				z-index: 1
+				cursor: pointer
+				margin-top: 0px
+				&::before
+					display: block
+					position: absolute
+					left: 0
+					top: 50%
+					width: 45px
+					height: 44px
+					margin-top: -7px
+					// background: rgba(0, 0, 0, 0) url(../images/checkbox.gif) no-repeat
+					border: 3px solid $bl
+					z-index: 5
+					content: ''
+			input:checked + label::before
+				background-color: $bl
+				background-image: url('../img/input_checkbox_arrow.png')
 	//End .event_details
 //End .online_quote_popup
