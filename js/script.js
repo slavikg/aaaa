@@ -15,6 +15,9 @@ $(document).ready(function() {
 	//Add Dash for reviews and change button text
 	ChangeReviewsLayout();
 
+	//Setting All DatePicker
+	SettingDatePicker();
+
 	$('.online_quote_popup .online_quote .delete').click(function(){
 		// console.log('Click');
 		// console.log($(this).parent('li'));
@@ -188,4 +191,17 @@ function ChangeReviewsLayout() {
 	// 		$(this).text( ' ' + $(this).text());
 	// 	});
 	$('.reviews_block .cd-testimonials-wrapper .cd-see-all').text('view all');
+}
+
+function SettingDatePicker() {
+	$('#event_details_date_function_from').datepicker({
+		dateFormat: "dd/mm/yy",
+		dayNamesShort: [ "Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam" ],
+		firstDay: 1
+	});
+	$('#event_details_date_function_to').datepicker({
+		dateFormat: "dd/mm/yy",
+		dayNamesShort: [ "Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam" ],
+		firstDay: 1
+	});
 }

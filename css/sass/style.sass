@@ -973,6 +973,7 @@ footer
 		cursor: pointer
 		padding: 23px 160px 19px 28px
 		margin-top: 36px
+		clear: both
 		float: right
 		transition: padding .25s linear
 		-webkit-transition: padding .25s linear
@@ -1043,11 +1044,14 @@ footer
 		li
 			border-top: 2px solid #d7d7d7
 			padding-top: 10px
-			padding-bottom: 10px
+			padding-bottom: 11px
 			transition: all .25s linear
 			-webkit-transition: all .25s linear
 			-moz-transition: all .25s linear
 			-o-transition: all .25s linear
+			// &:nth-child(2n)
+			// 	// padding-top: 10px
+			// 	padding-bottom: 12px
 			&:last-child
 				border-bottom: 2px solid #d7d7d7
 		.info
@@ -1149,7 +1153,7 @@ footer
 		// 	margin-bottom: 23px
 		li
 			padding-top: 25px
-			padding-bottom: 23px
+			padding-bottom: 24px
 			border-top: 2px solid #d7d7d7
 			&:last-child
 				border-bottom: 2px solid #d7d7d7
@@ -1479,23 +1483,99 @@ footer
 		.two_inputs + .two_inputs
 			margin-right: 0px
 			margin-left: 10px
+			float: right
 		.address_same_address
+			border-top: 2px solid #d7d7d7
+			padding-top: 20px
+			margin-top: 23px
 			h4
 				display: inline-block
 				font-family: $pnsb
 				font-size: 18px
-				line-height: 22px
+				line-height: 20px
 				color: $bl
 				width: 72%
-		.input_box
-			display: inline-block
-			*display: inline /* inline-block ie7 fix */
-			*zoom: 1
-			vertical-align: top
-			position: relative
-			cursor: pointer
-			margin-top: 6px
-			float: right
+			.input_box
+				display: inline-block
+				*display: inline /* inline-block ie7 fix */
+				*zoom: 1
+				vertical-align: top
+				position: relative
+				cursor: pointer
+				margin-top: 11px
+				float: right
+				input
+					width: 14px
+					height: 14px
+					margin: 0
+					padding: 0
+					position: absolute
+					left: 0
+					top: 50%
+					margin-top: -7px
+					cursor: pointer
+					z-index: 10
+					opacity: 0
+				label
+					font-size: 14px
+					line-height: 22px
+					display: block
+					padding-left: 45px
+					position: relative
+					z-index: 1
+					cursor: pointer
+					margin-top: 0px
+					&::before
+						display: block
+						position: absolute
+						left: 0
+						top: 50%
+						width: 45px
+						height: 44px
+						margin-top: -7px
+						// background: rgba(0, 0, 0, 0) url(../images/checkbox.gif) no-repeat
+						border: 3px solid $bl
+						z-index: 5
+						content: ''
+				input:checked + label::before
+					background-color: $bl
+					background-image: url('../img/input_checkbox_arrow.png')
+	//End .event_details
+	.subscribe
+		width: 33.3333%
+		padding-left: 25px
+		float: left
+		li
+			padding-top: 25px
+			padding-bottom: 23px
+			border-top: 2px solid #d7d7d7
+			// &:nth-child(2n)
+			// 	padding-top: 28px
+			// 	padding-bottom: 21px
+			&:last-child
+				border-bottom: 2px solid #d7d7d7
+			.info
+				float: left
+				h3,
+				h4
+					color: $bl
+				h3
+					font-family: $pnsb
+					font-size: 18px
+					line-height: 22px
+				h4
+					font-family: $pnr
+					font-size: 14px
+					line-height: 21px
+			.input_box
+				display: inline-block
+				*display: inline /* inline-block ie7 fix */
+				*zoom: 1
+				vertical-align: top
+				position: relative
+				cursor: pointer
+				margin-top: 6px
+				float: right
 			input
 				width: 14px
 				height: 14px
@@ -1516,7 +1596,6 @@ footer
 				position: relative
 				z-index: 1
 				cursor: pointer
-				margin-top: 0px
 				&::before
 					display: block
 					position: absolute
@@ -1532,5 +1611,84 @@ footer
 			input:checked + label::before
 				background-color: $bl
 				background-image: url('../img/input_checkbox_arrow.png')
-	//End .event_details
+		.how_find_side
+			label
+				display: block
+				font-family: $pnsb
+				font-weight: normal
+				font-size: 18px
+				line-height: 22px
+				color: $bl
+				margin-top: 22px
+				margin-bottom: 6px
+			select
+				font-family: $pnr
+				font-size: 18px
+				line-height: 22px
+				color: #d7d7d7
+				width: 100%
+				border: 3px solid #d7d7d7
+				background: url('../img/select_arrow.png')
+				background-repeat: no-repeat
+				background-position: right 14px center
+				padding: 0px 46px 2px 8px
+				outline: 0
+				/*for WebKit*/
+				-webkit-appearance: none
+				/* for FF */
+				-moz-appearance: none
+				text-indent: 0.01px
+				text-overflow: ''
+				/* for IE */
+				-ms-appearance: none
+				appearance: none !important
+				&:focus
+					color: #fff
+					border-color: $bl
+					background-color: $bl
+					background-image: url('../img/select_arrow_focus.png')
+				option
+					color: #fff
+					background: $bl
+					padding: 7.5px 0px 7.5px 15px
+					&:hover,
+					&:focus
+						color: $ye
+						background: $bl
+	//End .subscribe
 //End .online_quote_popup
+.ui-widget-content
+	width: 321px
+	border-radius: 0px
+	background: #d7d7d7
+	margin-top: 10px
+.ui-datepicker .ui-datepicker-prev
+	top: 9px
+	left: 9px
+	background: url('../img/jquery_ui_calendar_arrows.png') no-repeat 7px center
+	cursor: pointer
+	&:hover
+		left: 6px
+		border: none
+.ui-widget-header
+	border: none
+	border-radius: 0px
+	background: #d7d7d7
+.ui-datepicker-title
+	font-family: $pnsb
+	font-size: 18px
+	font-weight: normal
+	line-height: 22px
+	color: #515252
+	text-transform: uppercase
+.ui-datepicker-calendar
+	background: #fff
+	thead
+		border-bottom: 2px solid #d7d7d7
+.ui-widget-content .ui-state-default
+	border: none
+	background: none
+	text-align: center
+	&:hover
+		color: #fff
+		background: $bl
