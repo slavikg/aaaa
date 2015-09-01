@@ -1,3 +1,4 @@
+HeightNavAndSliderTop();
 
 $(document).ready(function() {
 	
