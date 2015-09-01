@@ -1887,26 +1887,48 @@ footer .copyright .logo img:hover {
 
 .ui-widget-content {
   width: 321px;
+  border: none;
   border-radius: 0px;
   background: #d7d7d7;
   margin-top: 10px;
 }
 
-.ui-datepicker .ui-datepicker-prev {
-  top: 9px;
-  left: 9px;
-  background: url("../img/jquery_ui_calendar_arrows.png") no-repeat 7px center;
-  cursor: pointer;
-}
-.ui-datepicker .ui-datepicker-prev:hover {
-  left: 6px;
-  border: none;
-}
-
-.ui-widget-header {
+.ui-datepicker .ui-widget-header {
   border: none;
   border-radius: 0px;
   background: #d7d7d7;
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  top: 10px;
+  left: 10px;
+  background: url("../img/jquery_ui_calendar_arrows.png") no-repeat 7px center;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+}
+.ui-datepicker .ui-datepicker-prev:hover {
+  left: 0px;
+  border: none;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  top: 10px;
+  right: 11px;
+  background: url("../img/jquery_ui_calendar_arrows.png") no-repeat right 7px center;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+}
+.ui-datepicker .ui-datepicker-next:hover {
+  right: 0px;
+  border: none;
 }
 
 .ui-datepicker-title {
@@ -1918,19 +1940,47 @@ footer .copyright .logo img:hover {
   text-transform: uppercase;
 }
 
+.ui-datepicker td {
+  padding: 0px;
+}
+
 .ui-datepicker-calendar {
   background: white;
 }
 .ui-datepicker-calendar thead {
   border-bottom: 2px solid #d7d7d7;
 }
+.ui-datepicker-calendar thead th {
+  font-family: ProximaNova-Regular, Arial;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #515356;
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 13px;
+}
 
 .ui-widget-content .ui-state-default {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #515356;
   border: none;
   background: none;
   text-align: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
 }
 .ui-widget-content .ui-state-default:hover {
   color: white;
   background: blue;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight,
+tbody .ui-datepicker-week-end {
+  background: whitesmoke;
 }
