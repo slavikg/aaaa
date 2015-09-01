@@ -598,7 +598,7 @@ header .online_quote span {
   padding: 0px;
   background: transparent;
   text-align: center;
-  margin: 0px;
+  margin: 0px auto;
 }
 .reviews_block .cd-testimonials-wrapper::after {
   display: none;
@@ -1145,7 +1145,8 @@ footer .copyright .logo img:hover {
   width: 40px;
   height: 100%;
   display: inline-block;
-  background: lime;
+  background: white;
+  z-index: -1;
 }
 .online_quote_popup .get_quote_form::before {
   right: 100%;
@@ -1884,13 +1885,41 @@ footer .copyright .logo img:hover {
   color: #ffff01;
   background: blue;
 }
+.online_quote_popup .quote_landed h2 {
+  display: inline-block;
+  font-family: ProximaNova-SemiBold, Arial;
+  font-size: 36px;
+  line-height: 43px;
+  border-bottom: 2px solid #d7d7d7;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  margin-bottom: 27px;
+}
+.online_quote_popup .quote_landed p {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  width: 49%;
+}
+.online_quote_popup .quote_landed p a {
+  color: blue;
+}
+.online_quote_popup .quote_landed p a:hover {
+  text-decoration: underline;
+}
+.online_quote_popup .quote_landed h2 + p {
+  margin-bottom: 26px;
+}
+.online_quote_popup .finish {
+  float: left;
+}
 
 .ui-widget-content {
   width: 321px;
   border: none;
   border-radius: 0px;
   background: #d7d7d7;
-  margin-top: 10px;
 }
 
 .ui-datepicker .ui-widget-header {

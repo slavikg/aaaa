@@ -85,6 +85,8 @@ $(document).ready(function() {
 			// if(checkEmpty('#quote-phone')) {
 				// $('.progress-bar-status').css('width', '100%');
 				$('.online_quote_popup .steps').slick('slickNext');
+				$('.online_quote_popup .status-bar').fadeOut();
+				$('.online_quote_popup .progress-bar').fadeOut();
 				// $('.current-step').html($(this).parent().data('slick-index') + 2);
 			// 	$('.error-msg').text('');
 			// } else {

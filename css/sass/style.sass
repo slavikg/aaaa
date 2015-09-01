@@ -491,7 +491,7 @@ header
 		padding: 0px
 		background: transparent
 		text-align: center
-		margin: 0px
+		margin: 0px auto
 		&::after
 			display: none
 	.cd-see-all
@@ -947,7 +947,8 @@ footer
 			width: 40px
 			height: 100%
 			display: inline-block
-			background: #0f0
+			background: #fff
+			z-index: -1
 		&::before
 			right: 100%
 		&::after
@@ -1656,13 +1657,36 @@ footer
 						color: $ye
 						background: $bl
 	//End .subscribe
+	.quote_landed
+		h2
+			display: inline-block
+			font-family: $pnsb
+			font-size: 36px
+			line-height: 43px
+			border-bottom: 2px solid #d7d7d7
+			padding-right: 80px
+			padding-bottom: 20px
+			margin-bottom: 27px
+		p
+			font-family: $pnr
+			font-size: 18px
+			line-height: 26px
+			color: #000
+			width: 49%
+			a
+				color: $bl
+				&:hover
+					text-decoration: underline
+		h2 + p
+			margin-bottom: 26px
+	.finish
+		float: left
 //End .online_quote_popup
 .ui-widget-content
 	width: 321px
 	border: none
 	border-radius: 0px
 	background: #d7d7d7
-	margin-top: 10px
 .ui-datepicker .ui-widget-header
 	border: none
 	border-radius: 0px
