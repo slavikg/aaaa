@@ -51,11 +51,13 @@ $(document).ready(function() {
 			});
 		}
 	});
+
 	function OnlineQuotePopup_ProgressBar_Width() {
 		$('.online_quote_popup .progress-bar').width($('.online_quote_popup .get_quote_form').width() + 80);
 	}
 	OnlineQuotePopup_ProgressBar_Width();
 	$(window).resize(OnlineQuotePopup_ProgressBar_Width);
+
 	$('.online_quote_popup .next-step').on('click', function(){
 		if ($(this).hasClass('next-step-2')) {
 			// if(checkEmpty('#quote-name')) {
@@ -118,6 +120,7 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.reviews_block .cd-testimonials-all .cd-testimonials-all-wrapper > ul').addClass('container');
 
 	// Column2Height($('.header_nav_and_slider .logo_and_nav'),
 	// 	$('.header_nav_and_slider .slider_top'));

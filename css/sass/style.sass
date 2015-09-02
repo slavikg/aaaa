@@ -674,6 +674,47 @@ header
 			width: 42px
 			height: 25px
 			background: url('../img/view_all_eye.png') no-repeat right center
+	.cd-testimonials-all .cd-testimonials-all-wrapper > ul
+		// width: inherit
+		max-width: initial
+	.cd-testimonials-all
+		background-color: rgba(255, 255, 1, .95)
+		p
+			font-family: $pnr
+			font-size: 18px
+			line-height: 26px
+			color: #000
+			border-radius: 0px
+			background: #fff
+			padding: 27px 30px 40px
+			margin-bottom: 16px
+			br
+				display: block
+				margin-top: 26px
+		.close-btn
+			top: 46px
+			right: 2%
+			&::before,
+			&::after
+				width: 4px
+				height: 23px
+				background-color: $bl
+	.cd-testimonials-all p::after
+		left: 30px
+		border-width: 21px
+		border-top-color: #fff
+	.cd-testimonials-all .cd-author
+		margin-top: 24px
+		margin-left: 0px
+		.cd-author-info li
+			display: block
+			font-size: 30px
+			line-height: 36px
+			color: $bl
+			&:first-child
+				font-family: $pnsb
+			&:last-child
+				font-family: $pnr
 //End .reviews_block
 .product_categories
 	padding-top: 76px

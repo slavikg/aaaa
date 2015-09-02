@@ -815,6 +815,56 @@ header .online_quote span {
   height: 25px;
   background: url("../img/view_all_eye.png") no-repeat right center;
 }
+.reviews_block .cd-testimonials-all .cd-testimonials-all-wrapper > ul {
+  max-width: initial;
+}
+.reviews_block .cd-testimonials-all {
+  background-color: rgba(255, 255, 1, 0.95);
+}
+.reviews_block .cd-testimonials-all p {
+  font-family: ProximaNova-Regular, Arial;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  border-radius: 0px;
+  background: white;
+  padding: 27px 30px 40px;
+  margin-bottom: 16px;
+}
+.reviews_block .cd-testimonials-all p br {
+  display: block;
+  margin-top: 26px;
+}
+.reviews_block .cd-testimonials-all .close-btn {
+  top: 46px;
+  right: 2%;
+}
+.reviews_block .cd-testimonials-all .close-btn::before, .reviews_block .cd-testimonials-all .close-btn::after {
+  width: 4px;
+  height: 23px;
+  background-color: blue;
+}
+.reviews_block .cd-testimonials-all p::after {
+  left: 30px;
+  border-width: 21px;
+  border-top-color: white;
+}
+.reviews_block .cd-testimonials-all .cd-author {
+  margin-top: 24px;
+  margin-left: 0px;
+}
+.reviews_block .cd-testimonials-all .cd-author .cd-author-info li {
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  color: blue;
+}
+.reviews_block .cd-testimonials-all .cd-author .cd-author-info li:first-child {
+  font-family: ProximaNova-SemiBold, Arial;
+}
+.reviews_block .cd-testimonials-all .cd-author .cd-author-info li:last-child {
+  font-family: ProximaNova-Regular, Arial;
+}
 
 .product_categories {
   padding-top: 76px;
