@@ -10,10 +10,14 @@ $krb:	KroppenRound-Bold, Arial
 		width: 1704px
 		padding-right: 20px
 		padding-left: 20px
+	@media (min-width: 1600px)
+		width: 1430px
 .row
 	@media (min-width: 1920px)
 		margin-right: -20px
 		margin-left: -20px
+
+//col-bg
 .col-bg-2,
 .col-bg-3,
 .col-bg-4,
@@ -51,6 +55,33 @@ $krb:	KroppenRound-Bold, Arial
 .col-bg-offset-2
 	@media (min-width: 1920px)
 		margin-left: 16.6667%
+//End col-bg
+
+//col-bgl
+.col-bgl-2,
+.col-bgl-3,
+.col-bgl-4,
+.col-bgl-8
+	@media (min-width: 1600px)
+		float: left
+		position: relative
+		min-height: 1px
+		padding-right: 15px
+		padding-left: 15px
+.col-bgl-2
+	@media (min-width: 1600px)
+		width: 16.6667%
+.col-bgl-3
+	@media (min-width: 1600px)
+		width: 25%
+.col-bgl-4
+	@media (min-width: 1600px)
+		width: 33.3333%
+.col-bgl-8
+	@media (min-width: 1600px)
+		width: 66.6667%
+//End col-bgl
+
 ul,
 ol,
 h1,
@@ -97,6 +128,9 @@ header
 		// left: 45px
 		left: 14%
 		padding-top: 4px
+		@media (min-width: 1600px)
+			left: 0px
+			margin-left: -16px	
 		li
 			margin-right: 4px
 			&::after
@@ -112,6 +146,8 @@ header
 				font-family: $pnb
 	.free_call
 		margin-left: 10.8%
+		@media (min-width: 1600px)
+			margin-left: 10%
 		h4
 			display: inline-block
 			font-family: $pnr
@@ -175,12 +211,17 @@ header
 		background: $ye
 		padding-top: 46px
 		padding-left: 6.68%
+		@media (min-width: 1600px)
+			width: 26.75%
+			padding-left: 6.35%
 		.logo
 			margin-left: -1px
 		nav
 			margin-top: 51px
 			margin-left: -1px
 			padding-bottom: 67px
+			@media (min-width: 1600px)
+				padding-bottom: 47px
 			li
 				margin-bottom: 20px
 				&:nth-child(1) a::before
@@ -266,6 +307,8 @@ header
 		width: 78.541667%
 		height: 100%
 		background: #d5d5d5
+		@media (min-width: 1600px)
+			width: 73.25%
 		img
 			width: 100%
 		.slider_top_content
@@ -273,6 +316,9 @@ header
 			bottom: 121px
 			left: 76px
 			width: 70%
+			@media (min-width: 1600px)
+				left: 82px
+				width: 76%
 			h1
 				font-family: $krb
 				font-size: 86px
@@ -312,6 +358,9 @@ header
 			position: absolute
 			bottom: 51px
 			left: 56px
+			@media (min-width: 1600px)
+				left: 61px
+				bottom: 61px
 			li
 				display: inline-block
 				margin-right: 18px
@@ -340,8 +389,12 @@ header
 		color: $bl
 		letter-spacing: -1px
 		margin-top: 46px
+		@media (min-width: 1600px)
+			line-height: 33px
 	.logo
 		margin-left: 25.15%
+		@media (min-width: 1600px)
+			margin-left: 16.5%
 //End .we_rent_fun
 .featured_products
 	padding-top: 69px
