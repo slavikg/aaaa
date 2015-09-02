@@ -450,6 +450,8 @@ header
 				// transition-delay: 0.5s
 			&::after
 				background-position: bottom left
+	#cd-quick-view-coverlay
+		background: rgba(255, 255, 1, .95)
 	.cd-quick-view
 		max-width: initial
 	.cd-slider li img
@@ -466,10 +468,35 @@ header
 			background: $bl
 	.cd-slider-wrapper
 		margin-right: 60px
+	.cd-slider-navigation li
+		&:first-child
+			left: 34px
+			a
+				&::before,
+				&::after
+					left: 10px
+		&:last-child
+			right: 34px
+			a
+				&::before,
+				&::after
+					left: 12px
+		a
+			&:hover
+				background: none
+			&::before,
+			&::after
+				width: 16px
+				height: 4px
+			&::before
+				top: 18px
+			&::after
+				top: 21px
 	.add-content
 		.cd-slider
 			margin-right: 0px
 		.cd-item-info
+			padding-bottom: 10px
 			h2
 				font-family: $pnsb
 				font-size: 36px
@@ -485,26 +512,57 @@ header
 				padding-right: 2px
 				margin-top: 22px
 				margin-bottom: 41px
+	.cd-item-info .cd-item-action li:first-child
+		margin-left: 0px
 	.cd-item-info .cd-item-action li
 		display: block
 		&:first-child
 			margin-bottom: 30px
 		a,
 		button
+			position: relative
 			font-family: $pnsb
 			font-size: 24px
 			line-height: 29px
 			width: 285px
 			padding: 23px 25px 19px 28px
+			transition: all .2s linear
+			-webkit-transition: all .2s linear
+			-moz-transition: all .2s linear
+			-o-transition: all .2s linear
+			&::after
+				content: ''
+				position: absolute
+				top: 14px
+				right: 24px
+				display: block
+				width: 43px
+				height: 43px
+				background-repeat: no-repeat
 		a
 			display: inline-block
 			color: $ye
 			background: $bl
+			&::after
+				background-image: url('../img/catalogue_arrow_bar_and_read_more.png')
+				background-position: top right
+			&:hover
+				color: $bl
+				background: $ye
+				&::after
+					background-position: top left
 		button
 			color: $bl
-			background: $ye
 			border-radius: 0px
 			text-align: left
+			background: $ye
+			&::after
+				background-image: url('../img/add_to_quote.png')
+			&:hover
+				color: $ye
+				background: $bl
+				&::after
+					background-position: top right
 	.cd-items
 		.slick-prev,
 		.slick-next
@@ -844,7 +902,7 @@ header
 				display: inline-block
 				width: 43px
 				height: 43px
-				background: url('../img/catalogue_arrow_bar.png') no-repeat
+				background: url('../img/catalogue_arrow_bar_and_read_more.png') no-repeat
 			&:hover::after
 				background-position: right 0px
 //End .video_follow_catalogue
