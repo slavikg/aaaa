@@ -5,6 +5,18 @@ $pnb:	ProximaNova-Bold, Arial
 $pnsb:	ProximaNova-SemiBold, Arial
 $krb:	KroppenRound-Bold, Arial
 
+@mixin tran($transition...)
+	transition: $transition
+	-webkit-transition: $transition
+	-moz-transition: $transition
+	-o-transition: $transition
+
+@mixin tran-delay($transition-delay)
+	transition-delay: $transition-delay
+	-webkit-transition-delay: $transition-delay
+	-moz-transition-delay: $transition-delay
+	-o-transition-delay: $transition-delay
+
 .container
 	@media (min-width: 1920px)
 		width: 1704px
@@ -343,10 +355,7 @@ header
 				border-radius: 5px
 				padding: 14px 24px 12px 21px
 				margin-left: -21px
-				transition: all .25s linear
-				-webkit-transition: all .25s linear
-				-moz-transition: all .25s linear
-				-o-transition: all .25s linear
+				@include tran(all .25s linear)
 				&:hover
 					background: #fff
 		.slick-prev,
@@ -399,6 +408,8 @@ header
 .featured_products
 	padding-top: 69px
 	padding-bottom: 91px
+	@media (min-width: 1600px)
+		padding-top: 53px
 	.name
 		font-family: $pnsb
 		font-size: 36px
@@ -406,10 +417,16 @@ header
 		color: $bl
 		margin-top: 0px
 		margin-bottom: 41px
+		@media (min-width: 1600px)
+			margin-bottom: 29px
 	.cd-item
 		height: 495px
+		@media (min-width: 1600px)
+			height: 433px
 		img
 			height: 396px
+			@media (min-width: 1600px)
+				height: 334px
 		.cd-trigger
 			top: 0px
 			font-family: $pnsb
@@ -418,6 +435,8 @@ header
 			line-height: 396px
 			color: #fff
 			background: rgba(0, 0, 255, .2)
+			@media (min-width: 1600px)
+				height: 334px
 			&:hover
 				background: rgba(0, 0, 255, .3)
 			&::before
@@ -434,10 +453,14 @@ header
 		.information
 			background: $ye
 			padding: 22px 30px 24px 29px
+			@media (min-width: 1600px)
+				padding: 21px 25px 25px 26px
 			.information_box
 				width: 55%
 				float: left
 				margin-top: 1px
+				@media (min-width: 1600px)
+					width: 64%
 			h3,
 			h4
 				display: inline-block
@@ -464,19 +487,16 @@ header
 					height: 43px
 					border-radius: 50px
 					border: 3px solid $bl
-					// transition: all .25s linear
-					// -webkit-transition: all .25s linear
-					// -moz-transition: all .25s linear
-					// -o-transition: all .25s linear
-					&::before
-						content: 'Read more'
-						display: none
-						font-family: $pnsb
-						font-size: 18px
-						line-height: 38px
-						color: $ye
-						text-transform: uppercase
-						margin-left: 19px
+					// @include tran(all .25s linear)
+					// &::before
+					// 	content: 'Read more'
+					// 	display: none
+					// 	font-family: $pnsb
+					// 	font-size: 18px
+					// 	line-height: 38px
+					// 	color: $ye
+					// 	text-transform: uppercase
+					// 	margin-left: 19px
 						// transition: margin-left .25s linear
 						// -webkit-transition: margin-left .25s linear
 						// -moz-transition: margin-left .25s linear
@@ -492,17 +512,41 @@ header
 						background: url('../img/read_more_plus.png')
 						background-repeat: no-repeat
 						background-position: top left
+					span
+						position: absolute
+						top: -3px
+						right: 23px
+						display: block
+						font-family: $pnsb
+						font-size: 18px
+						line-height: 38px
+						color: $ye
+						height: 43px
+						background: $bl
+						text-transform: uppercase
+						width: 0px
+						overflow: hidden
+						white-space: nowrap
+						border-radius: 50px 0px 0px 50px
+						// margin-left: 19px
 		&:hover .read_more a 
-			width: 176px
+			// width: 176px
 			background: $bl
-			&::before
-				display: inline-block
+			// &::before
+			// 	display: inline-block
 				// -webkit-transition-delay: 0.5s
 				// -o-transition-delay: 0.5s
 				// -moz-transition-delay: 0.5s
 				// transition-delay: 0.5s
 			&::after
 				background-position: bottom left
+			span
+				width: 150px
+				padding-top: 2px
+				padding-left: 22px
+				@include tran(all .3s linear)
+				@include tran-delay(.3s)
+				// overflow: visible
 	#cd-quick-view-coverlay
 		background: rgba(255, 255, 1, .95)
 	.cd-quick-view
