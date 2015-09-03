@@ -44,7 +44,10 @@ $(document).ready(function() {
 		touchMove: false,
 		draggable: false,
 		infinite: false,
-		fade: true,
+		// fade: true,
+		speed: 500,
+		// slidesToShow: 2,
+		// slidesToScroll: 2,
 		init: function(){
 			$('.step').each(function(){
 				$(this).fadeIn();
@@ -61,6 +64,7 @@ $(document).ready(function() {
 	$('.online_quote_popup .next-step').on('click', function(){
 		if ($(this).hasClass('next-step-2')) {
 			// if(checkEmpty('#quote-name')) {
+				// $(this).removeClass('first-step').addClass('next-step-3');
 				$('.online_quote_popup .progress-bar-status').css('width', '66.6666%');
 				$('.online_quote_popup .steps').slick('slickNext');
 				$('.online_quote_popup .current-step').html($(this).parent().data('slick-index') + 2);

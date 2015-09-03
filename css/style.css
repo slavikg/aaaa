@@ -5,7 +5,7 @@
     padding-left: 20px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .container {
     width: 1430px;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .col-bgl-2,
   .col-bgl-3,
   .col-bgl-4,
@@ -96,31 +96,31 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .col-bgl-2 {
     width: 16.6667%;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .col-bgl-3 {
     width: 25%;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .col-bgl-4 {
     width: 33.3333%;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .col-bg-6 {
     width: 50%;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .col-bgl-8 {
     width: 66.6667%;
   }
@@ -189,7 +189,7 @@ header .country {
   left: 14%;
   padding-top: 4px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   header .country {
     left: 0px;
     margin-left: -16px;
@@ -215,7 +215,7 @@ header .country li a {
 header .free_call {
   margin-left: 10.8%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   header .free_call {
     margin-left: 10%;
   }
@@ -292,7 +292,7 @@ header .online_quote span {
   padding-top: 46px;
   padding-left: 6.68%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .header_nav_and_slider .logo_and_nav {
     width: 26.75%;
     padding-left: 6.35%;
@@ -306,7 +306,7 @@ header .online_quote span {
   margin-left: -1px;
   padding-bottom: 67px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .header_nav_and_slider .logo_and_nav nav {
     padding-bottom: 47px;
   }
@@ -413,7 +413,7 @@ header .online_quote span {
   height: 100%;
   background: #d5d5d5;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .header_nav_and_slider .slider_top {
     width: 73.25%;
   }
@@ -427,7 +427,7 @@ header .online_quote span {
   left: 76px;
   width: 70%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .header_nav_and_slider .slider_top .slider_top_content {
     left: 82px;
     width: 76%;
@@ -479,7 +479,7 @@ header .online_quote span {
   bottom: 51px;
   left: 56px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .header_nav_and_slider .slider_top .slick-dots {
     left: 61px;
     bottom: 61px;
@@ -518,7 +518,7 @@ header .online_quote span {
   letter-spacing: -1px;
   margin-top: 46px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .we_rent_fun .text {
     line-height: 33px;
   }
@@ -526,7 +526,7 @@ header .online_quote span {
 .we_rent_fun .logo {
   margin-left: 25.15%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .we_rent_fun .logo {
     margin-left: 16.5%;
   }
@@ -536,7 +536,7 @@ header .online_quote span {
   padding-top: 69px;
   padding-bottom: 91px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products {
     padding-top: 53px;
     padding-bottom: 77px;
@@ -550,7 +550,7 @@ header .online_quote span {
   margin-top: 0px;
   margin-bottom: 41px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .name {
     margin-bottom: 29px;
   }
@@ -558,7 +558,7 @@ header .online_quote span {
 .featured_products .cd-item {
   height: 495px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-item {
     height: 433px;
   }
@@ -566,7 +566,7 @@ header .online_quote span {
 .featured_products .cd-item img {
   height: 396px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-item img {
     height: 334px;
   }
@@ -580,7 +580,7 @@ header .online_quote span {
   color: white;
   background: rgba(0, 0, 255, 0.2);
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-item .cd-trigger {
     height: 334px;
   }
@@ -597,14 +597,19 @@ header .online_quote span {
   width: 72px;
   height: 43px;
   background: url("../img/quick_view_eye.png");
-  margin-top: -32px;
+  margin-top: -62px;
   margin-left: -36px;
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .featured_products .cd-item .cd-trigger::before {
+    margin-top: -32px;
+  }
 }
 .featured_products .cd-item .information {
   background: #ffff01;
   padding: 22px 30px 24px 29px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-item .information {
     padding: 21px 25px 25px 26px;
   }
@@ -614,7 +619,7 @@ header .online_quote span {
   float: left;
   margin-top: 1px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-item .information .information_box {
     width: 64%;
   }
@@ -850,7 +855,7 @@ header .online_quote span {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-items .slick-prev,
   .featured_products .cd-items .slick-next {
     width: 95px;
@@ -872,7 +877,7 @@ header .online_quote span {
 .featured_products .cd-items .slick-prev {
   left: -100px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-items .slick-prev {
     left: -80px;
   }
@@ -880,7 +885,7 @@ header .online_quote span {
 .featured_products .cd-items .slick-next {
   right: -100px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .featured_products .cd-items .slick-next {
     right: -80px;
   }
@@ -894,7 +899,7 @@ header .online_quote span {
   padding-top: 76px;
   padding-bottom: 60px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .reviews_block {
     padding-top: 86px;
     padding-bottom: 78px;
@@ -908,7 +913,7 @@ header .online_quote span {
   text-align: center;
   margin: 0px auto;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .reviews_block .cd-testimonials-wrapper {
     max-width: 1050px;
   }
@@ -931,7 +936,7 @@ header .online_quote span {
   color: #ffff01;
   margin-bottom: 32px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .reviews_block .cd-testimonials p {
     margin-bottom: 36px;
   }
@@ -1052,7 +1057,7 @@ header .online_quote span {
   padding-top: 76px;
   padding-bottom: 62px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories {
     padding-top: 60px;
     padding-bottom: 38px;
@@ -1068,7 +1073,7 @@ header .online_quote span {
   color: blue;
   margin-bottom: 38px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories .name {
     margin-bottom: 29px;
   }
@@ -1091,7 +1096,7 @@ header .online_quote span {
   height: 259px;
   background: #d5d5d5;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories img {
     height: 217px;
   }
@@ -1100,7 +1105,7 @@ header .online_quote span {
   background: #ffff01;
   padding: 27px 28px 24px 32px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories .information {
     padding: 22px 28px 11px 29px;
   }
@@ -1113,7 +1118,7 @@ header .online_quote span {
   background-repeat: no-repeat;
   margin-right: 22px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories .information .logo {
     width: 55px;
     background-size: contain;
@@ -1167,7 +1172,7 @@ header .online_quote span {
   line-height: 29px;
   margin-top: 2px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories ul li h3 {
     font-size: 20px;
     line-height: 25px;
@@ -1178,7 +1183,7 @@ header .online_quote span {
   font-size: 18px;
   line-height: 26px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .product_categories ul li h4 {
     font-size: 15px;
     line-height: 22px;
@@ -1191,7 +1196,7 @@ header .online_quote span {
   float: left;
   overflow: hidden;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .instagram_feed li {
     height: 268px;
   }
@@ -1270,7 +1275,7 @@ header .online_quote span {
   padding-top: 66px;
   padding-bottom: 96px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue {
     padding-top: 60px;
     padding-bottom: 56px;
@@ -1283,7 +1288,7 @@ header .online_quote span {
   color: blue;
   margin-bottom: 36px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue h2 {
     margin-bottom: 28px;
   }
@@ -1292,7 +1297,7 @@ header .online_quote span {
   width: 100%;
   height: 450px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue .latest_video iframe {
     height: 434px;
   }
@@ -1300,7 +1305,7 @@ header .online_quote span {
 .video_follow_catalogue .follow_us li {
   margin-bottom: 32px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue .follow_us li {
     margin-bottom: 29px;
   }
@@ -1316,7 +1321,7 @@ header .online_quote span {
   background: #ffff01;
   padding: 23px 25px 19px 86px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue .follow_us a {
     font-size: 20px;
     line-height: 27px;
@@ -1374,7 +1379,7 @@ header .online_quote span {
   background: #ffff01;
   padding: 23px 25px 19px 28px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue .catalogue a {
     font-size: 20px;
     line-height: 27px;
@@ -1395,7 +1400,7 @@ header .online_quote span {
   height: 43px;
   background: url("../img/catalogue_arrow_bar_and_read_more.png") no-repeat;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   .video_follow_catalogue .catalogue a::after {
     right: 25px;
   }
@@ -1428,7 +1433,7 @@ footer .main .links {
 footer .main .emergency_contact {
   margin-left: 10.9%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   footer .main .emergency_contact {
     margin-left: 0px;
   }
@@ -1445,7 +1450,7 @@ footer .main .emergency_contact .phone {
 footer .main .information {
   margin-left: 9%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   footer .main .information {
     margin-left: 0px;
   }
@@ -1467,7 +1472,7 @@ footer .main .soc_networks {
   float: right;
   margin-top: 6px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   footer .main .soc_networks {
     margin-left: -3px;
   }
@@ -1513,7 +1518,7 @@ footer .copyright {
   padding-top: 52px;
   padding-bottom: 58px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1919px) {
   footer .copyright {
     padding-bottom: 61px;
   }
@@ -1846,6 +1851,7 @@ footer .copyright .logo img:hover {
 }
 .online_quote_popup .event_type li:last-child {
   border-bottom: 2px solid #d7d7d7;
+  padding-bottom: 45px;
 }
 .online_quote_popup .event_type .info {
   float: left;
