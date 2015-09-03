@@ -73,6 +73,7 @@ $krb:	KroppenRound-Bold, Arial
 .col-bgl-2,
 .col-bgl-3,
 .col-bgl-4,
+.col-bgl-6,
 .col-bgl-8
 	@media (min-width: 1600px)
 		float: left
@@ -89,6 +90,9 @@ $krb:	KroppenRound-Bold, Arial
 .col-bgl-4
 	@media (min-width: 1600px)
 		width: 33.3333%
+.col-bg-6
+	@media (min-width: 1600px)
+		width: 50%
 .col-bgl-8
 	@media (min-width: 1600px)
 		width: 66.6667%
@@ -410,6 +414,7 @@ header
 	padding-bottom: 91px
 	@media (min-width: 1600px)
 		padding-top: 53px
+		padding-bottom: 77px
 	.name
 		font-family: $pnsb
 		font-size: 36px
@@ -444,12 +449,12 @@ header
 				position: absolute
 				top: 50%
 				left: 50%
-				margin-top: -43px
-				margin-left: -21px
 				display: inline-block
-				width: 42px
-				height: 25px
+				width: 72px
+				height: 43px
 				background: url('../img/quick_view_eye.png')
+				margin-top: -32px
+				margin-left: -36px
 		.information
 			background: $ye
 			padding: 22px 30px 24px 29px
@@ -675,6 +680,8 @@ header
 			-webkit-transition: all .2s linear
 			-moz-transition: all .2s linear
 			-o-transition: all .2s linear
+			@media (min-width: 1600px)
+				width: 95px
 			&:hover
 				background: rgba(0, 0, 0, .05)
 			&::before
@@ -686,8 +693,12 @@ header
 				background-repeat: no-repeat
 		.slick-prev
 			left: -100px
+			@media (min-width: 1600px)
+				left: -80px
 		.slick-next
 			right: -100px
+			@media (min-width: 1600px)
+				right: -80px
 			&::before
 				background-position: left bottom
 //End .featured_products
@@ -695,6 +706,9 @@ header
 	background: $bl
 	padding-top: 76px
 	padding-bottom: 60px
+	@media (min-width: 1600px)
+		padding-top: 86px
+		padding-bottom: 78px
 	.cd-testimonials-wrapper
 		width: 100%
 		max-width: 1200px
@@ -702,6 +716,8 @@ header
 		background: transparent
 		text-align: center
 		margin: 0px auto
+		@media (min-width: 1600px)
+			max-width: 1050px
 		&::after
 			display: none
 	.cd-see-all
@@ -716,6 +732,8 @@ header
 		line-height: 32px
 		color: $ye
 		margin-bottom: 32px
+		@media (min-width: 1600px)
+			margin-bottom: 36px
 	.cd-author .cd-author-info li
 		display: inline-block
 		font-family: $pnsb
@@ -816,6 +834,9 @@ header
 .product_categories
 	padding-top: 76px
 	padding-bottom: 62px
+	@media (min-width: 1600px)
+		padding-top: 60px
+		padding-bottom: 38px
 	li
 		margin-bottom: 38px
 	.name
@@ -824,6 +845,8 @@ header
 		line-height: 44px
 		color: $bl
 		margin-bottom: 38px
+		@media (min-width: 1600px)
+			margin-bottom: 29px
 	a:hover .img_box
 		position: relative
 		&::after
@@ -839,36 +862,45 @@ header
 		width: 100%
 		height: 259px
 		background: #d5d5d5
+		@media (min-width: 1600px)
+			height: 217px
 	.information
 		background: $ye
 		padding: 27px 28px 24px 32px
+		@media (min-width: 1600px)
+			padding: 22px 28px 11px 29px
 		.logo
 			display: block
 			width: 65px
 			height: 59px
 			float: left
+			background-repeat: no-repeat
 			margin-right: 22px
+			@media (min-width: 1600px)
+				width: 55px
+				background-size: contain
+				margin-right: 19px
 	a:hover .information
 		background: $bl
 	ul li
 		&:nth-child(1) .information .logo
-			background: url('../img/product_categories_logo_1.png')
+			background-image: url('../img/product_categories_logo_1.png')
 		&:nth-child(1) a:hover .information .logo
-			background: url('../img/product_categories_logo_1_hover.png')
+			background-image: url('../img/product_categories_logo_1_hover.png')
 		&:nth-child(2) .information .logo
-			background: url('../img/product_categories_logo_2.png')
+			background-image: url('../img/product_categories_logo_2.png')
 		&:nth-child(3) .information .logo
-			background: url('../img/product_categories_logo_3.png')
+			background-image: url('../img/product_categories_logo_3.png')
 		&:nth-child(4) .information .logo
-			background: url('../img/product_categories_logo_4.png')
+			background-image: url('../img/product_categories_logo_4.png')
 		&:nth-child(5) .information .logo
-			background: url('../img/product_categories_logo_5.png')
+			background-image: url('../img/product_categories_logo_5.png')
 		&:nth-child(6) .information .logo
-			background: url('../img/product_categories_logo_6.png')
+			background-image: url('../img/product_categories_logo_6.png')
 		&:nth-child(7) .information .logo
-			background: url('../img/product_categories_logo_7.png')
+			background-image: url('../img/product_categories_logo_7.png')
 		&:nth-child(8) .information .logo
-			background: url('../img/product_categories_logo_8.png')
+			background-image: url('../img/product_categories_logo_8.png')
 		.text_box
 			float: left
 		h3,
@@ -883,10 +915,16 @@ header
 			font-size: 24px
 			line-height: 29px
 			margin-top: 2px
+			@media (min-width: 1600px)
+				font-size: 20px
+				line-height: 25px
 		h4
 			font-family: $pnr
 			font-size: 18px
 			line-height: 26px
+			@media (min-width: 1600px)
+				font-size: 15px
+				line-height: 22px
 //End .product_categories
 .instagram_feed
 	li
@@ -894,6 +932,8 @@ header
 		height: 321px
 		float: left
 		overflow: hidden
+		@media (min-width: 1600px)
+			height: 268px
 	a
 		position: relative
 		display: inline-block
@@ -959,19 +999,28 @@ header
 .video_follow_catalogue
 	padding-top: 66px
 	padding-bottom: 96px
+	@media (min-width: 1600px)
+		padding-top: 60px
+		padding-bottom: 56px
 	h2
 		font-family: $pnsb
 		font-size: 36px
 		line-height: 44px
 		color: $bl
 		margin-bottom: 36px
+		@media (min-width: 1600px)
+			margin-bottom: 28px
 	.latest_video
 		iframe
 			width: 100%
 			height: 450px
+			@media (min-width: 1600px)
+				height: 434px
 	.follow_us
 		li
 			margin-bottom: 32px
+			@media (min-width: 1600px)
+				margin-bottom: 29px
 		a
 			position: relative
 			display: inline-block
@@ -982,6 +1031,9 @@ header
 			width: 100%
 			background: $ye
 			padding: 23px 25px 19px 86px
+			@media (min-width: 1600px)
+				font-size: 20px
+				line-height: 27px
 			&:hover
 				color: $ye
 				background: $bl
@@ -1029,6 +1081,10 @@ header
 			width: 100%
 			background: $ye
 			padding: 23px 25px 19px 28px
+			@media (min-width: 1600px)
+				font-size: 20px
+				line-height: 27px
+				padding-left: 26px
 			&:hover
 				color: $ye
 				background: $bl
@@ -1041,6 +1097,8 @@ header
 				width: 43px
 				height: 43px
 				background: url('../img/catalogue_arrow_bar_and_read_more.png') no-repeat
+				@media (min-width: 1600px)
+					right: 25px
 			&:hover::after
 				background-position: right 0px
 //End .video_follow_catalogue
@@ -1063,6 +1121,8 @@ footer
 			word-spacing: 1px
 		.emergency_contact
 			margin-left: 10.9%
+			@media (min-width: 1600px)
+				margin-left: 0px
 			h2
 				word-spacing: 1px
 			.time
@@ -1071,6 +1131,8 @@ footer
 				word-spacing: 0px
 		.information
 			margin-left: 9%
+			@media (min-width: 1600px)
+				margin-left: 0px
 			h2
 				word-spacing: 1px
 			.text
@@ -1084,6 +1146,8 @@ footer
 			float: right
 			margin-top: 6px
 			// margin-right: -2px
+			@media (min-width: 1600px)
+				margin-left: -3px
 			li
 				display: inline-block
 				margin-right: 25px
@@ -1117,6 +1181,8 @@ footer
 		color: #878787
 		padding-top: 52px
 		padding-bottom: 58px
+		@media (min-width: 1600px)
+			padding-bottom: 61px
 		a
 			color: inherit
 			&:hover
