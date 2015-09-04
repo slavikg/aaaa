@@ -38,6 +38,10 @@ $(document).ready(function() {
 	$('.online_quote_popup .close-form').click(function(){
 		$('.online_quote_popup').removeClass('show');
 	});
+	$('.online_quote_popup').on('click', function(){
+		if($(this).hasClass('show'))
+			$('.online_quote_popup').removeClass('show');
+	});
 	$('.online_quote_popup .steps').slick({
 		arrows: false,
 		dots: false,
