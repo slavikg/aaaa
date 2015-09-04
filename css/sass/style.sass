@@ -24,6 +24,8 @@ $krb:	KroppenRound-Bold, Arial
 		padding-left: 20px
 	@media (min-width: 1600px) and (max-width: 1919px)
 		width: 1430px
+	@media (min-width: 1280px)
+		width: 1170px
 .row
 	@media (min-width: 1920px)
 		margin-right: -20px
@@ -98,6 +100,27 @@ $krb:	KroppenRound-Bold, Arial
 		width: 66.6667%
 //End col-bgl
 
+//col-lgb
+.col-lgb-2,
+.col-lgb-3,
+.col-lgb-4
+	@media (min-width: 1280px)
+		float: left
+		position: relative
+		min-height: 1px
+		padding-right: 20px
+		padding-left: 20px
+.col-lgb-2
+	@media (min-width: 1280px)
+		width: 16.6667%
+.col-lgb-3
+	@media (min-width: 1280px)
+		width: 25%
+.col-lgb-4
+	@media (min-width: 1280px)
+		width: 33.3333%
+//End col-lgb
+
 ul,
 ol,
 h1,
@@ -135,6 +158,8 @@ header
 		padding-top: 4px
 		li
 			margin-right: 25px
+			@media (min-width: 1280px)
+				margin-right: 16px
 			&:last-child
 				margin-right: 0px
 			a
@@ -146,7 +171,10 @@ header
 		padding-top: 4px
 		@media (min-width: 1600px) and (max-width: 1919px)
 			left: 0px
-			margin-left: -16px	
+			margin-left: -16px
+		@media (min-width: 1280px)
+			left: 0px
+			margin-left: 1px
 		li
 			margin-right: 4px
 			&::after
@@ -164,6 +192,9 @@ header
 		margin-left: 10.8%
 		@media (min-width: 1600px) and (max-width: 1919px)
 			margin-left: 10%
+		@media (min-width: 1280px)
+			margin-left: -20px
+			width: 120%
 		h4
 			display: inline-block
 			font-family: $pnr
@@ -188,6 +219,8 @@ header
 		float: right
 		font-family: $pnb
 		margin-right: 1px
+		@media (min-width: 1280px)
+			margin-right: 0px
 		a
 			color: $ye
 			&:hover
@@ -230,6 +263,9 @@ header
 		@media (min-width: 1600px) and (max-width: 1919px)
 			width: 26.75%
 			padding-left: 6.35%
+		@media (min-width: 1280px)
+			width: 26.01%
+			padding-left: 5.4%
 		.logo
 			margin-left: -1px
 		nav
@@ -325,6 +361,8 @@ header
 		background: #d5d5d5
 		@media (min-width: 1600px) and (max-width: 1919px)
 			width: 73.25%
+		@media (min-width: 1280px)
+			width: 73.99%
 		img
 			width: 100%
 		.slider_top_content

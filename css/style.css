@@ -10,6 +10,11 @@
     width: 1430px;
   }
 }
+@media (min-width: 1280px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 @media (min-width: 1920px) {
   .row {
@@ -126,6 +131,36 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .col-lgb-2,
+  .col-lgb-3,
+  .col-lgb-4 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .col-lgb-2 {
+    width: 16.6667%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .col-lgb-3 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .col-lgb-4 {
+    width: 33.3333%;
+  }
+}
+
 ul,
 ol,
 h1,
@@ -178,6 +213,11 @@ header nav {
 header nav li {
   margin-right: 25px;
 }
+@media (min-width: 1280px) {
+  header nav li {
+    margin-right: 16px;
+  }
+}
 header nav li:last-child {
   margin-right: 0px;
 }
@@ -193,6 +233,12 @@ header .country {
   header .country {
     left: 0px;
     margin-left: -16px;
+  }
+}
+@media (min-width: 1280px) {
+  header .country {
+    left: 0px;
+    margin-left: 1px;
   }
 }
 header .country li {
@@ -218,6 +264,12 @@ header .free_call {
 @media (min-width: 1600px) and (max-width: 1919px) {
   header .free_call {
     margin-left: 10%;
+  }
+}
+@media (min-width: 1280px) {
+  header .free_call {
+    margin-left: -20px;
+    width: 120%;
   }
 }
 header .free_call h4 {
@@ -247,6 +299,11 @@ header .online_quote {
   float: right;
   font-family: ProximaNova-Bold, Arial;
   margin-right: 1px;
+}
+@media (min-width: 1280px) {
+  header .online_quote {
+    margin-right: 0px;
+  }
 }
 header .online_quote a {
   color: #ffff01;
@@ -296,6 +353,12 @@ header .online_quote span {
   .header_nav_and_slider .logo_and_nav {
     width: 26.75%;
     padding-left: 6.35%;
+  }
+}
+@media (min-width: 1280px) {
+  .header_nav_and_slider .logo_and_nav {
+    width: 26.01%;
+    padding-left: 5.4%;
   }
 }
 .header_nav_and_slider .logo_and_nav .logo {
@@ -416,6 +479,11 @@ header .online_quote span {
 @media (min-width: 1600px) and (max-width: 1919px) {
   .header_nav_and_slider .slider_top {
     width: 73.25%;
+  }
+}
+@media (min-width: 1280px) {
+  .header_nav_and_slider .slider_top {
+    width: 73.99%;
   }
 }
 .header_nav_and_slider .slider_top img {
