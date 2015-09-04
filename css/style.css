@@ -981,6 +981,12 @@ header .online_quote span {
   max-width: initial;
   height: 466px;
 }
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .cd-slider li img {
+    width: 502px;
+    height: 399px;
+  }
+}
 .featured_products .cd-close {
   top: 26px;
   right: 29px;
@@ -992,6 +998,11 @@ header .online_quote span {
 }
 .featured_products .cd-slider-wrapper {
   margin-right: 60px;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .cd-slider-wrapper {
+    margin-right: 35px;
+  }
 }
 .featured_products .cd-slider-navigation li:first-child {
   left: 34px;
@@ -1023,6 +1034,11 @@ header .online_quote span {
 }
 .featured_products .add-content .cd-item-info {
   padding-bottom: 10px;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .add-content .cd-item-info {
+    padding-top: 16px;
+  }
 }
 .featured_products .add-content .cd-item-info h2 {
   font-family: ProximaNova-SemiBold, Arial;
