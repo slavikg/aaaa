@@ -26,6 +26,8 @@ $krb:	KroppenRound-Bold, Arial
 		width: 1430px
 	@media (min-width: 1280px) and (max-width: 1599px)
 		width: 1170px
+	@media (min-width: 1024px) and (max-width: 1279px)
+		width: 950px
 .row
 	@media (min-width: 1920px)
 		margin-right: -20px
@@ -121,13 +123,42 @@ $krb:	KroppenRound-Bold, Arial
 .col-lgb-4
 	@media (min-width: 1280px) and (max-width: 1599px)
 		width: 33.3333%
-.col-bg-6
+.col-lgb-6
 	@media (min-width: 1280px) and (max-width: 1599px)
 		width: 50%
 .col-lgb-8
 	@media (min-width: 1280px) and (max-width: 1599px)
 		width: 66.6667%
 //End col-lgb
+
+//col-lgl
+.col-lgl-2,
+.col-lgl-3,
+.col-lgl-4,
+.col-lgl-6,
+.col-lgl-8
+	@media (min-width: 1024px) and (max-width: 1279px)
+		float: left
+		position: relative
+		min-height: 1px
+		padding-right: 15px
+		padding-left: 15px
+.col-lgl-2
+	@media (min-width: 1024px) and (max-width: 1279px)
+		width: 16.6667%
+.col-lgl-3
+	@media (min-width: 1024px) and (max-width: 1279px)
+		width: 25%
+.col-lgl-4
+	@media (min-width: 1024px) and (max-width: 1279px)
+		width: 33.3333%
+.col-lgl-6
+	@media (min-width: 1024px) and (max-width: 1279px)
+		width: 50%
+.col-lgl-8
+	@media (min-width: 1024px) and (max-width: 1279px)
+		width: 66.6667%
+//End col-lgl
 
 ul,
 ol,
@@ -149,6 +180,9 @@ header
 	padding-top: 11px
 	padding-bottom: 10px
 	z-index: 2 !important
+	@media (min-width: 1024px) and (max-width: 1279px)
+		padding-top: 12px
+		padding-bottom: 9px
 	li
 		list-style: none
 		float: left
@@ -156,6 +190,8 @@ header
 			font-size: 16px
 			line-height: 20px
 			color: $ye
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 14px
 			&:focus
 				color: $ye
 				text-decoration: none
@@ -164,10 +200,17 @@ header
 				text-decoration: none
 	nav
 		padding-top: 4px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			padding-top: 2px
+		ul
+			@media (min-width: 1024px) and (max-width: 1279px)
+				margin-right: -20px
 		li
 			margin-right: 25px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				margin-right: 16px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				margin-right: 14px
 			&:last-child
 				margin-right: 0px
 			a
@@ -183,6 +226,9 @@ header
 		@media (min-width: 1280px) and (max-width: 1599px)
 			left: 0px
 			margin-left: 1px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			left: 20px
+			padding-top: 2px
 		li
 			margin-right: 4px
 			&::after
@@ -203,6 +249,9 @@ header
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-left: -19px
 			width: 120%
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-left: 13px
+			margin-right: -8px
 		h4
 			display: inline-block
 			font-family: $pnr
@@ -213,6 +262,10 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				font-size: 18px
 				line-height: 24px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 14px
+				line-height: 17px
+				margin-top: 3px
 			&.banner
 				color: $bl
 				background: $ye
@@ -223,6 +276,9 @@ header
 				@media (min-width: 1280px) and (max-width: 1599px)
 					padding: 0px 6px 0px 7px
 					margin-right: 9px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					padding: 2px 6px 0px 7px
+					margin-right: 6px
 			em
 				display: inline-block
 				width: 4px
@@ -235,6 +291,8 @@ header
 		margin-right: 1px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-right: 0px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-left: 5px
 		a
 			color: $ye
 			&:hover
@@ -245,15 +303,21 @@ header
 		span
 			display: inline-block
 			font-size: 16px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 14px
 		h4
 			line-height: 20px
 			margin-right: 6px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				margin-right: 3px
 		span
 			width: 31px
 			height: 29px
 			line-height: 29px
 			background: url('../img/online_quote_bg.png')
 			text-align: center
+			@media (min-width: 1024px) and (max-width: 1279px)
+				line-height: 24px
 	//End .online_quote
 .header_nav_and_slider
 	position: relative
@@ -280,8 +344,17 @@ header
 		@media (min-width: 1280px) and (max-width: 1599px)
 			width: 26.01%
 			padding-left: 5.4%
+		@media (min-width: 1024px) and (max-width: 1279px)
+			width: 33.1%
+		@media (min-width: 1024px) and (max-width: 1279px)
+			padding-top: 22px
+			padding-left: 5.13%
 		.logo
 			margin-left: -1px
+			img
+				@media (min-width: 1024px) and (max-width: 1279px)
+					width: 150px
+					height: 143px
 		nav
 			margin-top: 51px
 			margin-left: -1px
@@ -290,10 +363,15 @@ header
 				padding-bottom: 47px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				padding-bottom: 39px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				padding-bottom: 28px
+				margin-top: 34px
 			li
 				margin-bottom: 20px
 				@media (min-width: 1280px) and (max-width: 1599px)
 					margin-bottom: 10px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					margin-bottom: 11px
 				&:nth-child(1) a::before
 					background-image: url('../img/nav_logo_1.png')
 					// background-position: 0px 0px
@@ -301,8 +379,12 @@ header
 					margin-bottom: 19px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 9px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 10px
 					a
 						line-height: 42px
+						@media (min-width: 1024px) and (max-width: 1279px)
+							line-height: 30px
 						&::before
 							background-image: url('../img/nav_logo_2.png')
 							// background-position: 0px -54px
@@ -310,8 +392,12 @@ header
 					margin-bottom: 18px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 8px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 9px
 					a
 						line-height: 36px
+						@media (min-width: 1024px) and (max-width: 1279px)
+							line-height: 26px
 						&::before
 							background-image: url('../img/nav_logo_3.png')
 							// background-position: 0px -115px
@@ -319,8 +405,12 @@ header
 					margin-bottom: 18px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 8px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 9px
 					a
 						line-height: 45px
+						@media (min-width: 1024px) and (max-width: 1279px)
+							line-height: 33px
 						&::before
 							background-image: url('../img/nav_logo_4.png')
 							// background-position: 0px -169px
@@ -328,6 +418,8 @@ header
 					margin-bottom: 22px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 12px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 13px
 					a::before
 						background-image: url('../img/nav_logo_5.png')
 						// background-position: 0px -232px
@@ -335,8 +427,12 @@ header
 					margin-bottom: 25px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 15px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 9px
 					a
 						line-height: 39px
+						@media (min-width: 1024px) and (max-width: 1279px)
+							line-height: 31px
 						&::before
 							background-image: url('../img/nav_logo_6.png')
 							// background-position: 0px -288px
@@ -344,8 +440,12 @@ header
 					margin-bottom: 27px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 17px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 15px
 					a
 						line-height: 27px
+						@media (min-width: 1024px) and (max-width: 1279px)
+							line-height: 21px
 						&::before
 							background-image: url('../img/nav_logo_7.png')
 							// background-position: 0px -352px
@@ -353,11 +453,15 @@ header
 					margin-bottom: 30px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						margin-bottom: 20px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						margin-bottom: 16px
 					a::before
 						background-image: url('../img/nav_logo_8.png')
 						// background-position: 0px -406px
 				&:nth-child(9) a
 					line-height: 22px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						line-height: 18px
 					&::before
 						background-image: url('../img/nav_logo_9.png')
 						// background-position: 0px -470px
@@ -375,6 +479,10 @@ header
 				-o-transition: all .25s linear
 				@media (min-width: 1280px) and (max-width: 1599px)
 					font-size: 16px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					font-size: 14px
+					line-height: 24px
+					padding-left: 58px
 				&:hover
 					opacity: 1 !important
 				&::before
@@ -390,6 +498,10 @@ header
 						width: 41px
 						height: 40px
 						background-size: cover
+					@media (min-width: 1024px) and (max-width: 1279px)
+						width: 35px
+						height: 34px
+						background-size: cover
 	//End nav
 	.slider_top
 		position: relative
@@ -401,6 +513,8 @@ header
 			width: 73.25%
 		@media (min-width: 1280px) and (max-width: 1599px)
 			width: 73.99%
+		@media (min-width: 1024px) and (max-width: 1279px)
+			width: 66.9%
 		img
 			width: 100%
 		.slider_top_content
@@ -414,6 +528,9 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				left: 68px
 				width: 72%
+			@media (min-width: 1024px) and (max-width: 1279px)
+				left: 54px
+				bottom: 78px
 			h1
 				font-family: $krb
 				font-size: 86px
@@ -425,6 +542,10 @@ header
 					font-size: 66px
 					line-height: 66px
 					margin-bottom: 74px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					font-size: 46px
+					line-height: 46px
+					margin-bottom: 37px
 				.bg
 					background: #ffffff
 					// position: relative
@@ -432,6 +553,8 @@ header
 					-moz-outline-offset: -0.04em
 					@media (min-width: 1280px) and (max-width: 1599px)
 						outline: 16px solid #ffffff
+					@media (min-width: 1024px) and (max-width: 1279px)
+						outline: 11px solid #ffffff
 					span
 						position: relative
 			.read_more
@@ -447,6 +570,10 @@ header
 				@include tran(all .25s linear)
 				@media (min-width: 1280px) and (max-width: 1599px)
 					margin-left: -15px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					font-size: 21px
+					padding: 10px 19px 8px 15px
+					margin-left: -12px
 				&:hover
 					background: #fff
 		.slick-prev,
@@ -464,6 +591,9 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				left: 53px
 				bottom: 47px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				left: 40px
+				bottom: 34px
 			li
 				display: inline-block
 				margin-right: 18px
@@ -488,6 +618,9 @@ header
 	@media (min-width: 1280px) and (max-width: 1599px)
 		padding-top: 37px
 		padding-bottom: 43px
+	@media (min-width: 1024px) and (max-width: 1279px)
+		padding-top: 42px
+		padding-bottom: 43px
 	.text
 		font-family: $pnsb
 		font-size: 30px
@@ -502,6 +635,11 @@ header
 			line-height: 28px
 			padding-right: 94px
 			margin-top: 23px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			font-size: 20px
+			line-height: 24px
+			padding-right: 68px
+			margin-top: 17px
 	.logo
 		margin-left: 25.15%
 		@media (min-width: 1600px) and (max-width: 1919px)
@@ -510,6 +648,10 @@ header
 			width: 64%
 			height: 74%
 			margin-left: 45px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			width: 70%
+			height: 85%
+			margin-left: 42px
 //End .we_rent_fun
 .featured_products
 	padding-top: 69px
@@ -520,6 +662,9 @@ header
 	@media (min-width: 1280px) and (max-width: 1599px)
 		padding-top: 46px
 		padding-bottom: 65px
+	@media (min-width: 1024px) and (max-width: 1279px)
+		padding-top: 32px
+		padding-bottom: 45px
 	.name
 		font-family: $pnsb
 		font-size: 36px
@@ -531,18 +676,27 @@ header
 			margin-bottom: 29px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-bottom: 26px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-bottom: 21px
 	.cd-item
 		height: 495px
 		@media (min-width: 1600px) and (max-width: 1919px)
 			height: 433px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			height: 345px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			height: 290px
+		&:hover .cd-trigger
+			@media (min-width: 1024px) and (max-width: 1279px)
+				opacity: 1
 		img
 			height: 396px
 			@media (min-width: 1600px) and (max-width: 1919px)
 				height: 334px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				height: 270px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				height: 215px
 		.cd-trigger
 			top: 0px
 			font-family: $pnsb
@@ -556,6 +710,11 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				line-height: 330px
 				height: 270px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				line-height: 283px
+				height: 215px
+				visibility: visible
+				opacity: 0
 			&:hover
 				background: rgba(0, 0, 255, .3)
 			&::before
@@ -573,6 +732,8 @@ header
 					margin-top: -32px
 				@media (min-width: 1280px) and (max-width: 1599px)
 					margin-top: -33px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					margin-top: -29px
 		.information
 			background: $ye
 			padding: 22px 30px 24px 29px
@@ -580,6 +741,8 @@ header
 				padding: 21px 25px 25px 26px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				padding: 13px 20px 10px 19px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				padding: 14px 20px 24px 20px
 			.information_box
 				width: 55%
 				float: left
@@ -588,6 +751,8 @@ header
 					width: 64%
 				@media (min-width: 1280px) and (max-width: 1599px)
 					width: 70%
+				@media (min-width: 1024px) and (max-width: 1279px)
+					width: 83%
 			h3,
 			h4
 				display: inline-block
@@ -599,6 +764,9 @@ header
 				@media (min-width: 1280px) and (max-width: 1599px)
 					font-size: 20px
 					line-height: 26px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					font-size: 18px
+					line-height: 24px
 				&:hover
 					color: #fff
 			h4
@@ -609,10 +777,18 @@ header
 				@media (min-width: 1280px) and (max-width: 1599px)
 					font-size: 16px
 					line-height: 16px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					font-size: 14px
+					line-height: 14px
+					margin-left: 0px
 			.read_more
 				height: 48px
 				float: right
 				margin-top: 5px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					position: absolute
+					right: 20px
+					margin-top: 2px
 				a
 					position: relative
 					display: inline-block
@@ -662,29 +838,36 @@ header
 						white-space: nowrap
 						border-radius: 50px 0px 0px 50px
 						// margin-left: 19px
-		&:hover .read_more a 
-			// width: 176px
-			background: $bl
-			// &::before
-			// 	display: inline-block
-				// -webkit-transition-delay: 0.5s
-				// -o-transition-delay: 0.5s
-				// -moz-transition-delay: 0.5s
-				// transition-delay: 0.5s
-			&::after
-				background-position: bottom left
-			span
-				width: 150px
-				padding-top: 2px
-				padding-left: 22px
-				@include tran(all .3s linear)
-				@include tran-delay(.3s)
-				// overflow: visible
-				@media (max-width: 1599px)
-					display: none
-					&.remove
-						@media (min-width: 1600px) and (max-width: 1919px)
+						@media (min-width: 1280px) and (max-width: 1599px)
 							display: none
+						&.remove
+							@media (min-width: 1600px) and (max-width: 1919px)
+								display: none
+		&:hover
+			.information_box
+				@media (min-width: 1024px) and (max-width: 1279px)
+					visibility: hidden
+					@include tran(all .2s linear)
+			.read_more a 
+				// width: 176px
+				background: $bl
+				// &::before
+				// 	display: inline-block
+					// -webkit-transition-delay: 0.5s
+					// -o-transition-delay: 0.5s
+					// -moz-transition-delay: 0.5s
+					// transition-delay: 0.5s
+				&::after
+					background-position: bottom left
+				span
+					width: 150px
+					padding-top: 2px
+					padding-left: 22px
+					@include tran(all .3s linear)
+					@include tran-delay(.3s)
+					// overflow: visible
+					@media (min-width: 1024px) and (max-width: 1279px)
+						width: 221px
 	#cd-quick-view-coverlay
 		background: rgba(255, 255, 1, .95)
 	.cd-quick-view
@@ -834,6 +1017,8 @@ header
 				width: 95px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				width: 69px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				width: 52px
 			&:hover
 				background: rgba(0, 0, 0, .05)
 			&::before
@@ -849,12 +1034,16 @@ header
 				left: -80px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				left: -54px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				left: -37px
 		.slick-next
 			right: -100px
 			@media (min-width: 1600px) and (max-width: 1919px)
 				right: -80px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				right: -54px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				right: -37px
 			&::before
 				background-position: left bottom
 //End .featured_products
@@ -868,6 +1057,9 @@ header
 	@media (min-width: 1280px) and (max-width: 1599px)
 		padding-top: 71px
 		padding-bottom: 64px
+	@media (min-width: 1024px) and (max-width: 1279px)
+		padding-top: 47px
+		padding-bottom: 46px
 	.cd-testimonials-wrapper
 		width: 100%
 		max-width: 1200px
@@ -899,6 +1091,9 @@ header
 			font-size: 20px
 			line-height: 28px
 			margin-bottom: 34px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			font-size: 18px
+			line-height: 24px
 	.cd-author .cd-author-info li
 		display: inline-block
 		font-family: $pnsb
@@ -907,6 +1102,8 @@ header
 		color: $ye
 		@media (min-width: 1280px) and (max-width: 1599px)
 			font-size: 28px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			font-size: 24px
 		&:first-child
 			white-space: pre-wrap
 		// &::after
@@ -916,6 +1113,8 @@ header
 		margin-top: 78px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-top: 56px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-top: 33px
 		.slick-dots
 			li
 				display: inline-block
@@ -946,6 +1145,8 @@ header
 		border-radius: 50px
 		padding: 10px 84px 11px 20px
 		margin-top: 48px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-top: 32px
 		&:hover
 			color: $bl
 			background: #fff
@@ -1021,12 +1222,49 @@ header
 	@media (min-width: 1280px) and (max-width: 1599px)
 		padding-top: 60px
 		padding-bottom: 53px
+	@media (min-width: 1024px) and (max-width: 1279px)
+		padding-top: 36px
+		padding-bottom: 23px
 	li
 		margin-bottom: 38px
 		@media (min-width: 1600px) and (max-width: 1919px)
 			margin-bottom: 32px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-bottom: 25px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-bottom: 28px
+		&.browse_all_products
+			@media (min-width: 1280px)
+				display: none
+			a
+				position: relative
+				display: block
+				height: 265px
+				background: $bl
+				@include tran(all .3s ease)
+				&:hover
+					background: $ye
+				span
+					position: absolute
+					top: 50%
+					left: 50%
+					font-family: $pnb
+					font-size: 18px
+					line-height: 20px
+					color: #fff
+					width: 50%
+					text-align: center
+					margin-top: 10px
+					margin-left: -73px
+					&::before
+						content: ''
+						position: absolute
+						top: -57px
+						left: 36px
+						display: inline-block
+						width: 72px
+						height: 43px
+						background: url('../img/quick_view_eye.png')
 	.name
 		font-family: $pnsb
 		font-size: 36px
@@ -1037,6 +1275,8 @@ header
 			margin-bottom: 29px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-bottom: 25px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-bottom: 13px
 	a:hover .img_box
 		position: relative
 		&::after
@@ -1056,6 +1296,8 @@ header
 			height: 217px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			height: 179px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			height: 191px
 	.information
 		background: $ye
 		padding: 27px 28px 24px 32px
@@ -1063,6 +1305,8 @@ header
 			padding: 22px 20px 11px 29px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			padding: 18px 18px 2px 18px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			padding: 18px 14px 2px 18px
 		.logo
 			display: block
 			width: 65px
@@ -1076,6 +1320,10 @@ header
 				width: 55px
 				margin-right: 19px
 			@media (min-width: 1280px) and (max-width: 1599px)
+				width: 44px
+				height: 55px
+				margin-right: 12px
+			@media (min-width: 1024px) and (max-width: 1279px)
 				width: 44px
 				height: 55px
 				margin-right: 12px
@@ -1120,6 +1368,9 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				font-size: 16px
 				line-height: 19px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 18px
+				line-height: 20px
 		h4
 			font-family: $pnr
 			font-size: 18px
@@ -1130,6 +1381,9 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				font-size: 12px
 				line-height: 19px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 14px
+				line-height: 22px
 //End .product_categories
 .instagram_feed
 	li
@@ -1142,8 +1396,11 @@ header
 		@media (min-width: 1280px) and (max-width: 1599px)
 			width: 25%
 			height: 320px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			width: 25%
+			height: 256px
 		&:nth-child(n+9)
-			@media (min-width: 1280px) and (max-width: 1599px)
+			@media (min-width: 1024px) and (max-width: 1599px)
 				display: none
 	a
 		position: relative
@@ -1169,6 +1426,8 @@ header
 		padding-top: 27px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			padding-top: 26px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			padding-top: 25px
 	a:hover .information
 		width: 100%
 	h2,
@@ -1182,6 +1441,9 @@ header
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-right: 25px
 			margin-left: 25px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-right: 21px
+			margin-left: 21px
 	a:hover
 		h2,
 		h3,
@@ -1211,6 +1473,8 @@ header
 		bottom: 23px
 		font-family: $pnb
 		line-height: 17px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			bottom: 19px
 //End .instagram_feed
 .video_follow_catalogue
 	padding-top: 66px
@@ -1220,6 +1484,9 @@ header
 		padding-bottom: 56px
 	@media (min-width: 1280px) and (max-width: 1599px)
 		padding-bottom: 66px
+	@media (min-width: 1024px) and (max-width: 1279px)
+		padding-top: 36px
+		padding-bottom: 34px
 	h2
 		font-family: $pnsb
 		font-size: 36px
@@ -1230,6 +1497,8 @@ header
 			margin-bottom: 28px
 		@media (min-width: 1280px) and (max-width: 1599px)
 			margin-bottom: 35px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			margin-bottom: 25px
 	.latest_video
 		iframe
 			width: 100%
@@ -1238,12 +1507,16 @@ header
 				height: 434px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				height: 353px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				height: 295px
 	.follow_us
 		li
 			margin-bottom: 32px
 			@media (min-width: 1600px) and (max-width: 1919px)
 				margin-bottom: 29px
 			@media (min-width: 1280px) and (max-width: 1599px)
+				margin-bottom: 25px
+			@media (min-width: 1024px) and (max-width: 1279px)
 				margin-bottom: 25px
 		a
 			position: relative
@@ -1262,6 +1535,10 @@ header
 				font-size: 18px
 				line-height: 24px
 				padding: 15px 25px 16px 86px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 16px
+				line-height: 27px
+				padding: 15px 15px 13px 71px
 			&:hover
 				color: $ye
 				background: $bl
@@ -1276,6 +1553,9 @@ header
 				background: url('../img/social_networks_bar.png') no-repeat
 				@media (min-width: 1280px) and (max-width: 1599px)
 					top: 14px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					top: 14px
+					left: 20px
 		ul li
 			&:nth-child(1) a
 				&:hover::before
@@ -1286,6 +1566,8 @@ header
 					background-position: 0px -52px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						top: 13px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						top: 13px
 				&:hover::before
 					background-position: right -52px
 			&:nth-child(3) a
@@ -1293,6 +1575,8 @@ header
 					top: 21px
 					background-position: 0px -102px
 					@media (min-width: 1280px) and (max-width: 1599px)
+						top: 13px
+					@media (min-width: 1024px) and (max-width: 1279px)
 						top: 13px
 				&:hover::before
 					background-position: right -102px
@@ -1302,12 +1586,16 @@ header
 					background-position: 0px -152px
 					@media (min-width: 1280px) and (max-width: 1599px)
 						top: 12px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						top: 12px
 				&:hover::before
 					background-position: right -152px
 	.catalogue
 		li
 			margin-bottom: 32px
 			@media (min-width: 1280px) and (max-width: 1599px)
+				margin-bottom: 25px
+			@media (min-width: 1024px) and (max-width: 1279px)
 				margin-bottom: 25px
 		a
 			position: relative
@@ -1326,6 +1614,9 @@ header
 			@media (min-width: 1280px) and (max-width: 1599px)
 				font-size: 18px
 				padding: 12px 25px 14px 25px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 16px
+				padding: 13px 10px 13px 20px
 			&:hover
 				color: $ye
 				background: $bl
@@ -1340,7 +1631,7 @@ header
 				background: url('../img/catalogue_arrow_bar_and_read_more.png') no-repeat
 				@media (min-width: 1600px) and (max-width: 1919px)
 					right: 25px
-				@media (min-width: 1280px) and (max-width: 1599px)
+				@media (min-width: 1024px) and (max-width: 1599px)
 					display: none
 			&:hover::after
 				background-position: right 0px
@@ -1351,6 +1642,9 @@ footer
 		color: $ye
 		padding-top: 53px
 		padding-bottom: 46px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			padding-top: 34px
+			padding-bottom: 32px
 		a,
 		h2
 			font-family: $pnr
@@ -1358,6 +1652,9 @@ footer
 			line-height: 24px
 			@media (min-width: 1280px) and (max-width: 1599px)
 				font-size: 15px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				font-size: 14px
+				line-height: 19px
 		a
 			color: inherit
 			&:hover
@@ -1373,12 +1670,21 @@ footer
 			@media (min-width: 1280px) and (max-width: 1599px)
 				margin-right: -30px
 				margin-left: -30px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				margin-left: 0px
 			h2
 				word-spacing: 1px
+			.text
+				@media (min-width: 1024px) and (max-width: 1279px)
+					line-height: 20px
 			.time
 				text-transform: uppercase
+				@media (min-width: 1024px) and (max-width: 1279px)
+					margin-top: 1px
 			.phone
 				word-spacing: 0px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					margin-top: 1px
 		.information
 			margin-left: 9%
 			@media (min-width: 1600px) and (max-width: 1919px)
@@ -1386,13 +1692,20 @@ footer
 			@media (min-width: 1280px) and (max-width: 1599px)
 				margin-right: -50px
 				margin-left: 47px
+			@media (min-width: 1024px) and (max-width: 1279px)
+				margin-left: -1px
 			h2
 				word-spacing: 1px
 			.text
 				width: 70%
+				@media (min-width: 1024px) and (max-width: 1279px)
+					width: 84%
 			.phone_fax
 				margin-top: 24px
 				margin-bottom: 24px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					margin-top: 23px
+					margin-bottom: 21px
 			.email
 				font-family: $pnsb
 		.soc_networks
@@ -1404,6 +1717,8 @@ footer
 			li
 				display: inline-block
 				margin-right: 25px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					margin-right: 15px
 				&:last-child
 					margin-right: 0px
 			a
@@ -1412,20 +1727,30 @@ footer
 				height: 31px
 				background: url('../img/footer_social_networks_bar.png')
 				background-repeat: no-repeat
+				@media (min-width: 1024px) and (max-width: 1279px)
+					width: 25px
+					height: 24px
+					background-size: 53px 163px
 			li
 				&:nth-child(1) a
 					&:hover
 						background-position: right 0px
 				&:nth-child(2) a
 					background-position: left -52px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						background-position: left -41px
 					&:hover
 						background-position: right -52px
 				&:nth-child(3) a
 					background-position: left -102px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						background-position: left -81px
 					&:hover
 						background-position: right -102px
 				&:nth-child(4) a
 					background-position: left -152px
+					@media (min-width: 1024px) and (max-width: 1279px)
+						background-position: left -121px
 					&:hover
 						background-position: right -152px
 	//End .main
@@ -1436,6 +1761,9 @@ footer
 		padding-bottom: 58px
 		@media (min-width: 1600px) and (max-width: 1919px)
 			padding-bottom: 61px
+		@media (min-width: 1024px) and (max-width: 1279px)
+			padding-top: 30px
+			padding-bottom: 34px
 		a
 			color: inherit
 			&:hover
@@ -1451,6 +1779,8 @@ footer
 				line-height: 24px
 				@media (min-width: 1280px) and (max-width: 1599px)
 					font-size: 16px
+				@media (min-width: 1024px) and (max-width: 1279px)
+					font-size: 14px
 			h2
 				word-spacing: -1px
 				margin-bottom: 8px
