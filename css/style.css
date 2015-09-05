@@ -1037,7 +1037,7 @@ header .online_quote span {
 }
 @media (min-width: 1280px) and (max-width: 1599px) {
   .featured_products .add-content .cd-item-info {
-    padding-top: 16px;
+    padding-top: 15px;
   }
 }
 .featured_products .add-content .cd-item-info h2 {
@@ -1057,6 +1057,14 @@ header .online_quote span {
   margin-top: 22px;
   margin-bottom: 41px;
 }
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .add-content .cd-item-info p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 39px;
+  }
+}
 .featured_products .cd-item-info .cd-item-action li:first-child {
   margin-left: 0px;
 }
@@ -1065,6 +1073,11 @@ header .online_quote span {
 }
 .featured_products .cd-item-info .cd-item-action li:first-child {
   margin-bottom: 30px;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .cd-item-info .cd-item-action li:first-child {
+    margin-bottom: 25px;
+  }
 }
 .featured_products .cd-item-info .cd-item-action li a,
 .featured_products .cd-item-info .cd-item-action li button {
@@ -1078,6 +1091,13 @@ header .online_quote span {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .cd-item-info .cd-item-action li a,
+  .featured_products .cd-item-info .cd-item-action li button {
+    width: 256px;
+    padding: 22px 20px 20px 20px;
+  }
 }
 .featured_products .cd-item-info .cd-item-action li a::after,
 .featured_products .cd-item-info .cd-item-action li button::after {
@@ -1334,6 +1354,11 @@ header .online_quote span {
 .reviews_block .cd-testimonials-all {
   background-color: rgba(255, 255, 1, 0.95);
 }
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .reviews_block .cd-testimonials-all .cd-testimonials-item {
+    margin-bottom: 25px;
+  }
+}
 .reviews_block .cd-testimonials-all p {
   font-family: ProximaNova-Regular, Arial;
   font-size: 18px;
@@ -1344,9 +1369,21 @@ header .online_quote span {
   padding: 27px 30px 40px;
   margin-bottom: 16px;
 }
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .reviews_block .cd-testimonials-all p {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 18px 27px 28px;
+  }
+}
 .reviews_block .cd-testimonials-all p br {
   display: block;
   margin-top: 26px;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .reviews_block .cd-testimonials-all p br {
+    margin-top: 18px;
+  }
 }
 .reviews_block .cd-testimonials-all .close-btn {
   top: 46px;
@@ -1371,6 +1408,12 @@ header .online_quote span {
   font-size: 30px;
   line-height: 36px;
   color: blue;
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .reviews_block .cd-testimonials-all .cd-author .cd-author-info li {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 .reviews_block .cd-testimonials-all .cd-author .cd-author-info li:first-child {
   font-family: ProximaNova-SemiBold, Arial;
