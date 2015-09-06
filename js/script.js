@@ -13,7 +13,6 @@ $(document).ready(function() {
 	});
 
 	$(".compact_navigation .search input").on('focus', function () {
-		console.log('sdf');
 		$(this).parent('.search').addClass('active');
 	});
 	$(".compact_navigation .search input").on('blur', function () {
@@ -194,13 +193,19 @@ function StartSliders() {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 2
-		      }
-		    }
-		  ]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	$('.reviews_block .cd-testimonials').slick({
@@ -221,10 +226,11 @@ function HeightNavAndSliderTop () {
 }
 
 function ChangeReviewsLayout() {
-	$('.reviews_block .cd-testimonials-wrapper .cd-author li:first-child').each(
-		function() {
-			$(this).text( $(this).text() + ' - ' );
-		});
+	if( $(window).width() >= 768 )
+		$('.reviews_block .cd-testimonials-wrapper .cd-author li:first-child').each(
+			function() {
+				$(this).text( $(this).text() + ' - ' );
+			});
 	// $('.reviews_block .cd-testimonials-wrapper .cd-author li:last-child').each(
 	// 	function() {
 	// 		$(this).text( ' ' + $(this).text());
