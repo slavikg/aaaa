@@ -1354,6 +1354,12 @@ header .online_quote span {
     height: 399px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .featured_products .cd-slider li img {
+    width: 400px;
+    height: 407px;
+  }
+}
 .featured_products .cd-close {
   top: 26px;
   right: 29px;
@@ -1367,6 +1373,11 @@ header .online_quote span {
   margin-right: 60px;
 }
 @media (min-width: 1280px) and (max-width: 1599px) {
+  .featured_products .cd-slider-wrapper {
+    margin-right: 35px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
   .featured_products .cd-slider-wrapper {
     margin-right: 35px;
   }
@@ -1407,6 +1418,12 @@ header .online_quote span {
     padding-top: 15px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .featured_products .add-content .cd-item-info {
+    padding-top: 15px;
+    padding-right: 29px;
+  }
+}
 .featured_products .add-content .cd-item-info h2 {
   font-family: ProximaNova-SemiBold, Arial;
   font-size: 36px;
@@ -1432,6 +1449,14 @@ header .online_quote span {
     margin-bottom: 39px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .featured_products .add-content .cd-item-info p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 25px;
+  }
+}
 .featured_products .cd-item-info .cd-item-action li:first-child {
   margin-left: 0px;
 }
@@ -1441,7 +1466,7 @@ header .online_quote span {
 .featured_products .cd-item-info .cd-item-action li:first-child {
   margin-bottom: 30px;
 }
-@media (min-width: 1280px) and (max-width: 1599px) {
+@media (min-width: 1024px) and (max-width: 1599px) {
   .featured_products .cd-item-info .cd-item-action li:first-child {
     margin-bottom: 25px;
   }
@@ -1459,7 +1484,7 @@ header .online_quote span {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
 }
-@media (min-width: 1280px) and (max-width: 1599px) {
+@media (min-width: 1024px) and (max-width: 1599px) {
   .featured_products .cd-item-info .cd-item-action li a,
   .featured_products .cd-item-info .cd-item-action li button {
     width: 256px;
@@ -1769,6 +1794,11 @@ header .online_quote span {
     margin-bottom: 25px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .reviews_block .cd-testimonials-all .cd-testimonials-item {
+    margin-bottom: 25px;
+  }
+}
 .reviews_block .cd-testimonials-all p {
   font-family: ProximaNova-Regular, Arial;
   font-size: 18px;
@@ -1786,6 +1816,13 @@ header .online_quote span {
     padding: 18px 27px 28px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .reviews_block .cd-testimonials-all p {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 21px 23px 21px;
+  }
+}
 .reviews_block .cd-testimonials-all p br {
   display: block;
   margin-top: 26px;
@@ -1793,6 +1830,11 @@ header .online_quote span {
 @media (min-width: 1280px) and (max-width: 1599px) {
   .reviews_block .cd-testimonials-all p br {
     margin-top: 18px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .reviews_block .cd-testimonials-all p br {
+    margin-top: 12px;
   }
 }
 .reviews_block .cd-testimonials-all .close-btn {
@@ -1823,6 +1865,12 @@ header .online_quote span {
   .reviews_block .cd-testimonials-all .cd-author .cd-author-info li {
     font-size: 26px;
     line-height: 32px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .reviews_block .cd-testimonials-all .cd-author .cd-author-info li {
+    font-size: 23px;
+    line-height: 28px;
   }
 }
 .reviews_block .cd-testimonials-all .cd-author .cd-author-info li:first-child {
