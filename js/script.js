@@ -3,8 +3,23 @@ HeightNavAndSliderTop();
 $(document).ready(function() {
 	
 
-	// Hover to navigation
+	//Hover to navigation
 	Hover2navigation();	
+
+	//CompactNavigationOpenButton
+	$('.compact_navigation .button').click(function(){
+		$(this).addClass('anim').toggleClass('open');
+		$('.compact_navigation .compact_navigation_drop_down').toggleClass('show');
+	});
+
+	$(".compact_navigation .search input").on('focus', function () {
+		console.log('sdf');
+		$(this).parent('.search').addClass('active');
+	});
+	$(".compact_navigation .search input").on('blur', function () {
+		if($(this).val().length == 0)
+			$(this).parent('.search').removeClass('active');
+	});
 
 	//Initialize sliders
 	StartSliders();
@@ -169,7 +184,7 @@ function StartSliders() {
 		fade: true,
 		cssEase: 'linear',
 		autoplay: true,
-		autoplaySpeed: 2000
+		autoplaySpeed: 2000,
 	});
 
 	$('.featured_products .cd-items').slick({
@@ -177,7 +192,15 @@ function StartSliders() {
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2
+		      }
+		    }
+		  ]
 	});
 
 	$('.reviews_block .cd-testimonials').slick({
@@ -190,9 +213,11 @@ function StartSliders() {
 }
 
 function HeightNavAndSliderTop () {
-	var heightNav = $('.logo_and_nav').outerHeight();
-	$('.header_nav_and_slider .slider_top img').outerHeight(heightNav);
-	$('.header_nav_and_slider .slider_top').outerHeight(heightNav);
+	if( $(window).width() >= 1024 ) {
+		var heightNav = $('.logo_and_nav').outerHeight();
+		$('.header_nav_and_slider .slider_top img').outerHeight(heightNav);
+		$('.header_nav_and_slider .slider_top').outerHeight(heightNav);
+	}
 }
 
 function ChangeReviewsLayout() {
