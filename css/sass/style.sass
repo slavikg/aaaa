@@ -217,6 +217,8 @@ a:hover
 	text-decoration: none
 body
 	margin-top: 50px
+	// &.compact_navigation_open
+	// 	overflow: hidden
 header
 	background: $bl
 	padding-top: 11px
@@ -228,9 +230,11 @@ header
 	@media (min-width: 768px) and (max-width: 1023px)
 		padding-top: 12px
 		padding-bottom: 9px
+		z-index: 12 !important
 	@media (max-width: 767px)
 		padding-top: 12px
 		padding-bottom: 9px
+		z-index: 12 !important
 	li
 		list-style: none
 		float: left
@@ -604,7 +608,21 @@ header
 						background-size: cover
 	//End nav
 	.compact_navigation
+		position: relative
 		background: $ye
+		z-index: 11
+		&.open
+			&::before
+				content: ''
+				position: absolute
+				top: 90px
+				left: 0px
+				display: block
+				width: 100%
+				height: 1px
+				box-shadow: 0px 6px 5px 0px #000
+				// border-bottom: 4px solid #fff
+				overflow: hidden
 		.line
 			padding-top: 20px
 			padding-bottom: 20px
@@ -623,6 +641,8 @@ header
 			img
 				@media (max-width: 767px)
 					width: 316%
+		#search_top
+			float: right
 		h2,
 		.button,
 		.search
@@ -642,7 +662,7 @@ header
 				margin-top: 7px
 				margin-right: 15px
 		.button
-			$td: 0.5s ease-in
+			$td: 0.3s ease-in
 			$z: translateZ(0px)
 			display: inline-block
 			width: 40px
@@ -650,8 +670,8 @@ header
 			// font-size: 10em
 			padding: 0px
 			box-sizing: border-box
-			transition: background $td, border-radius $td, transform $td
-			// @include tran(background $td, border-radius $td, transform $td)
+			// transition: background $td, border-radius $td, transform $td
+			@include tran(background $td, border-radius $td, transform $td)
 			// position: absolute
 			// top: 0
 			// left: 0
@@ -666,6 +686,8 @@ header
 				margin-right: 48px
 			&.open
 				margin-top: 16px
+				@media (max-width: 767px)
+					margin-top: 12px
 				.bar-top
 					opacity: 0
 					animation: open-top $td
@@ -690,6 +712,7 @@ header
 				//$h: 40px / (3 + 2 * 1.5)
 				height: 3px//$h
 				margin-bottom: 8px//$h * 1.5
+				@include tran(background $td, border-radius $td, transform $td)
 			@keyframes open-top
 				0%
 					opacity: 1
@@ -791,6 +814,123 @@ header
 		.compact_navigation_drop_down
 			display: none
 			@include tran(all .3s linear)
+			margin-top: 60px
+			li
+				display: block
+				width: 25%
+				float: left
+				text-align: center
+				// padding-right: 6px
+			a
+				@include tran(opacity .3s linear)
+				&:hover
+					opacity: 1 !important
+			.logo
+				display: inline-block
+				width: 88px
+				height: 80px
+				background-repeat: no-repeat
+				background-position: top center
+				margin-bottom: 19px
+			li
+				&:nth-child(1) .logo
+					background-image: url("../img/compact_menu_1.png")
+					background-position: top 8px center
+				&:nth-child(2) .logo
+					background-image: url("../img/compact_menu_2.png")
+				&:nth-child(3) .logo
+					background-image: url("../img/compact_menu_3.png")
+					background-position: top 5px center
+				&:nth-child(4) .logo
+					background-image: url("../img/compact_menu_4.png")
+					background-position: top 5px center
+				&:nth-child(5) .logo
+					background-image: url("../img/compact_menu_5.png")
+					background-position: top 3px center
+				&:nth-child(6) .logo
+					background-image: url("../img/compact_menu_6.png")
+					background-position: top 1px center
+				&:nth-child(7) .logo
+					background-image: url("../img/compact_menu_7.png")
+					background-position: top 9px center
+				&:nth-child(8) .logo
+					background-image: url("../img/compact_menu_8.png")
+				&:nth-child(n+5)
+					margin-top: 49px
+					.logo
+						margin-bottom: 11px
+			h3,
+			h4
+				text-align: center
+			h3
+				font-family: $pnb
+				font-size: 18px
+				line-height: 22px
+				color: $bl
+				// margin-right: -6px
+				// &:hover
+				// 	color: #fff
+			h4
+				font-family: $pnr
+				font-size: 14px
+				line-height: 21px
+				color: $bl
+			.browse_all_products
+				position: relative
+				display: block
+				width: 100%
+				height: 90px
+				font-family: $pnb
+				font-size: 18px
+				line-height: 90px
+				color: #fff
+				text-align: center
+				background: $bl
+				margin-top: 55px
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					top: 0px
+					display: block
+					width: 99999px
+					height: 90px
+					background: $bl
+				&::before
+					right: 100%
+				&::after
+					left: 100%
+				// &::before
+				// 	content: ''
+				// 	position: absolute
+				// 	top: 0px
+				// 	left: 150%
+				// 	display: block
+				// 	width: 99999px
+				// 	height: 90px
+				// 	background: $bl
+				// 	z-index: -1
+				// compact_menu_browse_all_products_eye.png
+				span
+					position: relative
+					display: inline-block
+					width: 72px
+					height: 43px
+					// margin-top: 18px
+					margin-right: 22px
+					&::before
+						content: ''
+						position: absolute
+						left: 0px
+						top: 18px
+						width: 100%
+						height: 100%
+						display: inline-block
+						background: url('../img/compact_menu_browse_all_products_eye.png')
+				&:hover
+					color: $ye
+					span::before
+						background-position: top right
 		&.main_page
 			@media (min-width: 1024px)
 				display: none
@@ -817,7 +957,9 @@ header
 			@media (min-width: 768px) and (max-width: 1023px)
 				height: 473px
 			@media (max-width: 767px)
+				width: 320px
 				height: 183px
+				margin: 0px auto
 		.slider_top_content
 			position: absolute
 			bottom: 121px
@@ -837,10 +979,11 @@ header
 				bottom: 78px
 			@media (max-width: 767px)
 				position: static
-				width: 100%
+				width: 270px
 				height: 180px
-				padding-left: 24px
+				// padding-left: 24px
 				padding-top: 18px
+				margin: 0px auto
 			h1
 				font-family: $krb
 				font-size: 86px
@@ -913,6 +1056,9 @@ header
 			display: none !important
 		.slick_dots_box
 			position: relative
+			@media (max-width: 767px)
+				width: 270px
+				margin: 0px auto
 		.slick-dots
 			position: absolute
 			left: 56px
@@ -930,7 +1076,7 @@ header
 				left: 40px
 				bottom: 34px
 			@media (max-width: 767px)
-				left: 25px
+				left: 0px//25px
 				bottom: 22px
 			li
 				display: inline-block
@@ -1467,8 +1613,8 @@ header
 				background-repeat: no-repeat
 				@media (min-width: 768px) and (max-width: 1023px)
 					width: 18px
-					height: 32px
-					background-size: cove
+					height: 35px
+					background-size: cover
 				@media (max-width: 767px)
 					width: 9px
 					height: 19px
@@ -2259,9 +2405,12 @@ footer
 			padding-top: 34px
 			padding-bottom: 32px
 		@media (max-width: 767px)
-			position: relative
+			// position: relative
 			padding-top: 91px
 			padding-bottom: 32px
+		.container
+			@media (max-width: 767px)
+				position: relative
 		a,
 		h2
 			font-family: $pnr
@@ -2371,8 +2520,8 @@ footer
 				margin-left: -3px
 			@media (max-width: 767px)
 				position: absolute
-				top: 30px
-				left: 26px
+				top: -61px
+				left: 16px
 				float: none
 			li
 				display: inline-block
@@ -3378,3 +3527,14 @@ footer
 .ui-widget-header .ui-state-highlight,
 tbody .ui-datepicker-week-end
 	background: #f5f5f5
+
+.overlay_body
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 10
+	display: none
+	background: #fff
+	opacity: .8
