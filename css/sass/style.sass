@@ -623,6 +623,8 @@ header
 				box-shadow: 0px 6px 5px 0px #000
 				// border-bottom: 4px solid #fff
 				overflow: hidden
+				@media (max-width: 767px)
+					top: 65px
 		.line
 			padding-top: 20px
 			padding-bottom: 20px
@@ -815,12 +817,19 @@ header
 			display: none
 			@include tran(all .3s linear)
 			margin-top: 60px
+			@media (max-width: 767px)
+				margin-top: 27px
 			li
 				display: block
 				width: 25%
 				float: left
 				text-align: center
 				// padding-right: 6px
+				@media (max-width: 767px)
+					width: 50%
+					padding-left: 20px
+					padding-right: 20px
+					margin-bottom: 23px
 			a
 				@include tran(opacity .3s linear)
 				&:hover
@@ -832,6 +841,11 @@ header
 				background-repeat: no-repeat
 				background-position: top center
 				margin-bottom: 19px
+				@media (max-width: 767px)
+					width: 47px
+					height: 54px
+					background-size: contain
+					margin-bottom: 0px
 			li
 				&:nth-child(1) .logo
 					background-image: url("../img/compact_menu_1.png")
@@ -857,8 +871,12 @@ header
 					background-image: url("../img/compact_menu_8.png")
 				&:nth-child(n+5)
 					margin-top: 49px
+					@media (max-width: 767px)
+						margin-top: 0px
 					.logo
 						margin-bottom: 11px
+						@media (max-width: 767px)
+							margin-bottom: 7px
 			h3,
 			h4
 				text-align: center
@@ -870,11 +888,16 @@ header
 				// margin-right: -6px
 				// &:hover
 				// 	color: #fff
+				@media (max-width: 767px)
+					font-size: 16px
+					line-height: 18px
 			h4
 				font-family: $pnr
 				font-size: 14px
 				line-height: 21px
 				color: $bl
+				@media (max-width: 767px)
+					display: none
 			.browse_all_products
 				position: relative
 				display: block
@@ -887,6 +910,10 @@ header
 				text-align: center
 				background: $bl
 				margin-top: 55px
+				@media (max-width: 767px)
+					height: 60px
+					line-height: 60px
+					margin-top: 4px
 				&::before,
 				&::after
 					content: ''
@@ -896,6 +923,8 @@ header
 					width: 99999px
 					height: 90px
 					background: $bl
+					@media (max-width: 767px)
+						height: 60px
 				&::before
 					right: 100%
 				&::after
@@ -918,6 +947,10 @@ header
 					height: 43px
 					// margin-top: 18px
 					margin-right: 22px
+					@media (max-width: 767px)
+						width: 44px
+						height: 26px
+						margin-right: 13px
 					&::before
 						content: ''
 						position: absolute
@@ -927,6 +960,10 @@ header
 						height: 100%
 						display: inline-block
 						background: url('../img/compact_menu_browse_all_products_eye.png')
+						background-repeat: no-repeat
+						@media (max-width: 767px)
+							top: 8px
+							background-size: 222%
 				&:hover
 					color: $ye
 					span::before
